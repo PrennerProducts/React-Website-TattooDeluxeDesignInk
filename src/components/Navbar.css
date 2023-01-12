@@ -72,9 +72,7 @@
 }
 
 .menu-icon {
-  width: 200px;
-  height: 200px;
-  background-color: red;
+  display: none;
 }
 
 @media screen and (max-width: 960px) {

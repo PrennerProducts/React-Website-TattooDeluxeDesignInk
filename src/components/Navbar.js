@@ -11,11 +11,15 @@ function MyNavbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
-  const handleClick = () => setClick(!click);
+  const handleClick = () =>{
+     setClick(!click);
+     return click;
+     console.log(click);
+  }
   const closeMobileMenue = () => setClick(false);
 
   const showButton = () => {
-    if (window.innerWidth <= 960) {
+    if (window.innerWidth >= 960) {
       setButton(false);
     } else {
       setButton(true);

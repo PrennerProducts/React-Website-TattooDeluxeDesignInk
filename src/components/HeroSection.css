@@ -7,9 +7,9 @@ video {
 }
 
 .hero-container {
-    /* background:url('./public/images/img-home.jpg') 
-    center center/cover no-repeat; */
-    height: 100vh;
+    background:url('/public/images/background2.jpg') 
+    center center/cover no-repeat; 
+    height:100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -30,6 +30,18 @@ video {
     font-size: 30px;
     margin-top: 8px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.gif-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+.gif-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .hero-btns {

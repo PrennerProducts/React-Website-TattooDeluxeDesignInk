@@ -3,11 +3,16 @@ import '../App.css'
 import { Button } from './Button'
 import './HeroSection.css'
 
+
 function HeroSection() {
   return (
     <div className="hero-container">
-        <video src="/videos/tattoo.mp4" autoPlay loop muted />
-        <h1>WATCH NOW</h1>
+        {/* <video src="/videos/tattoo.mp4" autoPlay loop muted /> */}
+       
+        <h1>GET A TATTOO</h1>
+        <div className="gif-container">
+          <img className="gif-img" src='/gif.gif' alt='GIF' />
+        </div>
         <p>What are you waiting for?</p>
         <div className="btns">
             <Button 

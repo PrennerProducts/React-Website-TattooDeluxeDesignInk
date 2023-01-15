@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { Button } from './Button';
-//import { skull } from '.../img/skull-icon.png';
+import { FaBars, FaTimes} from 'react-icons/fa'
+import {GiRocketThruster} from 'react-icons/gi'
+import {IconContext} from 'react-icons/lib'
 import './Navbar.css';
 
 
@@ -11,11 +14,7 @@ function MyNavbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
-  const handleClick = () =>{
-     setClick(!click);
-     return click;
-     console.log(click);
-  }
+  const handleClick = () => setClick(!click);
   const closeMobileMenue = () => setClick(false);
 
   const showButton = () => {
@@ -37,10 +36,12 @@ function MyNavbar() {
       <nav className="navbar">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenue}>
-            PP Ink TattooStudio <i className="fas fa-sharp fa-solid fa-skull" />
+          <img src="/images/baseIcon.png" alt="bug" height={50} />
+          <img src="/images/white_text-logoname_transparent_background.png" alt="bug" height={140} />
+
           </Link>
           <div className="menu-icon" onClick={handleClick}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+            {click ? <FaTimes/> : <FaBars/>}
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className="nav-item">

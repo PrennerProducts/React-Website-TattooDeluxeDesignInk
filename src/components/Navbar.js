@@ -55,8 +55,8 @@ function MyNavbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/portfolio" className="nav-links" onClick={closeMobileMenue}>
-                Portfolio
+              <Link to="/gallerie" className="nav-links" onClick={closeMobileMenue}>
+                Gallerie
               </Link>
             </li>
             <li className="nav-item">
@@ -65,7 +65,7 @@ function MyNavbar() {
               </Link>
             </li>    
           </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+          {/* {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>} */}
         </div>
       </nav>
     </>

@@ -7,30 +7,17 @@ import './HeroSection.css'
 function HeroSection() {
   return (
     <div className="hero-container">
-        {/* <video src="/videos/tattoo.mp4" autoPlay loop muted /> */}
+        <video src="/videos/tattoo2.mp4" autoPlay loop muted />
        
-        <h1>GET A TATTOO</h1>
-        <div className="gif-container">
-          <img className="gif-img" src='/gif.gif' alt='GIF' />
-        </div>
-        <p>What are you waiting for?</p>
-        <div className="btns">
-            <Button 
-            className="btns" 
-            buttonStyle="btn--outline" 
-            buttonSize="btn--large"
-            >
-                GET STARTED
-            </Button>
-            <Button 
-            className="btns" 
-            buttonStyle="btn--primary" 
-            buttonSize="btn--large"
-            >
-                WATCH TRAILER <i className="far fa-play-circle" />
-            </Button>
+    
+      <div className="gif-container">
+          <img  className='gif-img' src='/images/gif.gif' alt='GIF' loop />
+      </div>
+       
+    
+     
 
-    </div>
+  
     </div>
   );
 }

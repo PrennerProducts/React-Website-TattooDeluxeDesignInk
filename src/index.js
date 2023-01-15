@@ -7,12 +7,14 @@ import {
 } from "react-router-dom";
 import MyNavbar from './components/Navbar';
 import Home from "./components/pages/Home";
+import Gallerie from "./components/pages/Gallerie.js";
 
 const AppLayout = () => {
     return (
         <>
         <MyNavbar />
         <Outlet/>
+        
         </>
     );
 };
@@ -25,7 +27,11 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home/>,
-              },
+        },
+            {
+            path: "Gallerie",
+            element: <Gallerie/>,
+            },
         ],
     }
   

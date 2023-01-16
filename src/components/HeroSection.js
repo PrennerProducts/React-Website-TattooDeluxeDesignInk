@@ -30,19 +30,18 @@ function HeroSection() {
         }
       ]}
       
-      
       wrapper="div"
       cursor={false}
       repeat={false}
       speed={45}
       deletionSpeed={45}
-      style={{ fontSize: '5em', paddingLeft: '5px', alignItems: 'center', color: 'white',  fontFamily: 'Rowdies'  }}
+      style={{top: '250px', fontSize: '5em', paddingLeft: '0px', marginTop: '200px', alignItems: 'center', color: 'white',  fontFamily: 'Rowdies' }} //, backgroundColor:'rgba(0, 0, 0, 0.2)' 
       className="typeAnimation"
     
     />
        </div>
-    
-       <video style={{with:'250%'}} src="/videos/tattoo.mp4" autoPlay loop muted />
+       <img className='herologo' src="/images/white_logo_transparent_background.png" alt="bug"  />    
+       <video style={{with:'250%'}} src="/videos/Tattoo_zoom.mp4" autoPlay loop muted />
     </div>
   );
 }

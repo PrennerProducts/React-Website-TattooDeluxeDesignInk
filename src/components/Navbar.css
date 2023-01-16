@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Rubik+Dirt&display=swap');
+
 .navbar {
-  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  background: linear-gradient(1770deg, rgb(0, 0, 0) 10%, rgb(18, 20, 38) 50%, rgb(0, 0, 0) 10%);
   height: 80px;
   display: flex;
   justify-content: center;
@@ -56,6 +58,11 @@
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 100%;
+  font-family: 'Grechen Fuemen', cursive; 
+  /* font-family: 'Rubik Dirt', cursive; */
+  font-size: 40px;
+  font-weight: bold;
+
 }
 
 .nav-links:hover {

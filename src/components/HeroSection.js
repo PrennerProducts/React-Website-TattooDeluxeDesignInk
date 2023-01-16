@@ -5,6 +5,7 @@ import './HeroSection.css'
 import { TypeAnimation } from 'react-type-animation'
 
 
+
 function HeroSection() {
   return (
     <div className="hero-container">
@@ -17,31 +18,31 @@ function HeroSection() {
        
        <div className="begruessungsDiv">
     
-        <TypeAnimation className="type-animation"
+        <TypeAnimation 
       sequence={[
-        'Hallo und herzlich  Willkommen bei PP INK Völkermarkt', // Types 'One'
-        2000, // Waits 1s
-        'Ich bin Phil und freue mich auf euren Besuch!', // Deletes 'One' and types 'Two'
-        2000, // Waits 2s
-        'Tätovierer', // Types 'Three' without deleting 'Two'
-        1000, // Waits 2s
-        'Künstler', // Types 'Three' without deleting 'Two'
-        1000, // Waits 2s
-        'Artist', // Types 'Three' without deleting 'Two'
-        1000, // Waits 2s
-        '', // Types 'Three' without deleting 'Two'
+        3000, // Waits 1s
+        'Herzlich  Willkommen bei PP INK', // Types 'One'
+        5000, // Waits 1s
+          // Waits 2s
+        '',// Types 'Three' without deleting 'Two'
         () => {
           console.log('Done typing!'); // Place optional callbacks anywhere in the array
         }
       ]}
+      
+      
       wrapper="div"
-      cursor={true}
+      cursor={false}
       repeat={false}
-      style={{ fontSize: '3em', paddingLeft: '5px', alignItems: 'top' }}
+      speed={45}
+      deletionSpeed={45}
+      style={{ fontSize: '6em', paddingLeft: '5px', alignItems: 'top', color: 'white',  fontFamily : 'Grechen Fuemen', fontWeight: 'bold'  }}
+      className="typeAnimation"
+    
     />
        </div>
     
-       <video src="/videos/tattoo2.mp4" autoPlay loop muted />
+       <video style={{with:'250%'}} src="/videos/tattoo.mp4" autoPlay loop muted />
     </div>
   );
 }

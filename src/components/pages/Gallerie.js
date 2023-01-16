@@ -200,8 +200,8 @@ const Gallerie = () =>{
 
   return (
     <>
-      <h1>Gallerie</h1>
-      <h2>Willkommen im PP INK TATOOSTUDIO Völkermarkt</h2>
+   <h1>Gallerie</h1>
+      
       <div className={model? "model open" : "model"}>
         <img src={tempImgSrc} alt="pic" />
         <FaTimes onClick={() => setModel(false)}/>

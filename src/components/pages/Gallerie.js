@@ -45,34 +45,6 @@ const Gallerie = () =>{
 
     let data =[
         {
-            id: 1,
-            imgSrc: background1,
-        },
-        {
-            id: 2,
-            imgSrc: background2,
-        },
-        {
-            id: 3,
-            imgSrc: background3,
-        },
-        {
-            id: 4,
-            imgSrc: background4,
-        },
-        {
-            id: 5,
-            imgSrc: background5,
-        },
-        {
-            id: 6,
-            imgSrc: background1,
-        },
-        {
-            id: 7,
-            imgSrc: background1,
-        },
-        {
             id: 8,
             imgSrc: a1,
         },
@@ -200,8 +172,11 @@ const Gallerie = () =>{
 
   return (
     <>
-   <h1>Gallerie</h1>
-      
+    
+   
+      <div className="h1div">
+        <h1 >  Gallerie</h1>
+      </div>
       <div className={model? "model open" : "model"}>
         <img src={tempImgSrc} alt="pic" />
         <FaTimes onClick={() => setModel(false)}/>

@@ -6,9 +6,16 @@
     -moz-column-width: 33%;
     column-width: 33%;
     padding: 0 12px;
-    background-color: black;;
+    background-color:  rgba(0, 0, 0, 0.573);
    
 }
+
+.h1div{
+    /*align into center*/
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.573);
+}
+
 
 .gallery .pics{
     -webkit-transition: all 350ms ease-out;

@@ -175,7 +175,7 @@ const Gallerie = () =>{
     
    
       <div className="h1div">
-        <h1 >  Gallerie</h1>
+        {/* <h1 >  Gallerie</h1> */}
       </div>
       <div className={model? "model open" : "model"}>
         <img src={tempImgSrc} alt="pic" />

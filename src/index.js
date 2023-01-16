@@ -14,7 +14,7 @@ const AppLayout = () => {
         <>
         <MyNavbar />
         <Outlet/>
-        
+        <Gallerie />
         </>
     );
 };

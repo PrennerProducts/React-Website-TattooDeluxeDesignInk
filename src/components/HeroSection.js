@@ -36,7 +36,7 @@ function HeroSection() {
       repeat={false}
       speed={45}
       deletionSpeed={45}
-      style={{ fontSize: '6em', paddingLeft: '5px', alignItems: 'top', color: 'white',  fontFamily : 'Grechen Fuemen', fontWeight: 'bold'  }}
+      style={{ fontSize: '5em', paddingLeft: '5px', alignItems: 'center', color: 'white',  fontFamily: 'Rowdies'  }}
       className="typeAnimation"
     
     />

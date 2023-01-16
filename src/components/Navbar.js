@@ -36,8 +36,8 @@ function MyNavbar() {
       <nav className="navbar">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenue}>
-          <img src="/images/baseIcon.png" alt="bug" height={50} />
-          <img src="/images/white_text-logoname_transparent_background.png" alt="bug" height={110} />
+          <img className="logo1" src="/images/baseIcon.png" alt="bug" height={65} />
+          <img className='logo2' src="/images/white_text-logoname_transparent_background.png" alt="bug" height={180} />
 
           </Link>
           <div className="menu-icon" onClick={handleClick}>

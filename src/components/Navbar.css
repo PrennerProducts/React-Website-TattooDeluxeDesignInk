@@ -86,6 +86,7 @@ font-family: 'Rowdies', cursive;
   display: none;
 }
 
+
 @media screen and (max-width: 960px) {
   .NavbarItems {
     position: realative;
@@ -125,9 +126,14 @@ font-family: 'Rowdies', cursive;
   }
 
   .navbar-logo {
-    position: absolute;
-    top: 0;
-    left: 0;
+    margin-left: 1rem;
+    display: flex;
+  }
+  .logo1{
+    height: 10 px;
+  }
+  .logo2{
+    display: none;
   }
 
   .menu-icon {
@@ -166,4 +172,8 @@ font-family: 'Rowdies', cursive;
     color: #242424;
     transition: 250ms;
   }
+  
+
+
+
 }

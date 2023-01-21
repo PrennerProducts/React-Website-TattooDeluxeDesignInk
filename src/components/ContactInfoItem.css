@@ -1,0 +1,42 @@
+
+.ItemStyles{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 8px;
+    border: 1px solid black;
+    margin-bottom: 2rem;
+}
+
+.icon{
+
+    padding: 1.3rem ;
+    align-items: center;
+    justify-content: center;
+    border-radius:50%;
+    
+}
+
+svg{
+    width: 5rem;
+}
+
+.iconstyle{
+    
+}
+
+
+.info .p{
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    Line-height: 1.3em;
+   
+}
+
+ @media only screen and (max-width: 768px) {
+    .info .p{
+        font-size: 1.4rem;
+    }
+}

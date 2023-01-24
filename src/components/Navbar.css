@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Jolly+Lodger&family=Rowdies&family=Rubik+Dirt&display=swap');
 
 .navbar {
-  background: linear-gradient(1770deg, rgb(0, 0, 0) 10%, rgb(18, 20, 38) 50%, rgb(0, 0, 0) 10%);
+  /* background: linear-gradient(1770deg, rgb(0, 0, 0) 10%, rgb(18, 20, 38) 50%, rgb(0, 0, 0) 10%); */
+  background-color: rgb(219, 12, 255);
+  background-image: url('../../public/images/div2.png');
+  background-position: center;
+  background-size: 31%;
   height: 80px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;

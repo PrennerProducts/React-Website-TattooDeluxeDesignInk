@@ -9,6 +9,7 @@ import MyNavbar from './components/Navbar';
 import Home from "./components/pages/Home";
 import Gallerie from "./components/pages/Gallerie.js";
 import UeberMich from './components/pages/UeberMich.js';
+import Contact from './components/pages/Contact.js';
 
 
 const AppLayout = () => {
@@ -16,8 +17,11 @@ const AppLayout = () => {
         <>
         <MyNavbar />
         <Outlet/>
+        <Home />
         <UeberMich />
         <Gallerie />
+        <Contact />
+        
         
         
         </>
@@ -29,19 +33,23 @@ const router = createBrowserRouter([
     {
         element: <AppLayout/>,
         children: [
+        
             {
-                path: "/",
-                element: <Home/>,
-        },
-            {
-            path: "Gallerie",
+            path: "/gallerie",
             element: <Gallerie/>,
             },
             {
-              path: "UeberMich",
-              element: <UeberMich/>,
-              },
-            
+            path: "/uebermich",
+            element: <UeberMich/>,
+            },
+            {
+            path: "/contact",
+            element: <Contact/>,
+            },
+            {
+              path: "/",
+              element: <Home/>,
+          },
         ],
     }
   

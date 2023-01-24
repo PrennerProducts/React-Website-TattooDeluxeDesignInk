@@ -7,7 +7,7 @@ function UeberMich() {
             <div className='left'>
                <div className='card bg'> </div>
                <div className='card'>
-                    <img  src='/images/portrait.jpg'
+                    <img  src='/images/portrait1.jpg'
                     alt='Portrait' className='img'  /> </div>
              </div>
 

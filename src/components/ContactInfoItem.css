@@ -1,13 +1,25 @@
 
 .ItemStyles{
-    padding: 2rem;
+    background-color: rgba(219, 12, 255, 0.752);
+    background-image: url('../../public/images/div2.png');
+     width: 80vw;
+     height: 10%;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    opacity: .9;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 2rem;
     border-radius: 8px;
-    border: 1px solid black;
+    border: 1px solid rgb(189, 17, 17);
     margin-bottom: 2rem;
+
 }
+
 
 .icon{
 
@@ -17,23 +29,26 @@
     border-radius:50%;
     
 }
+.iconstyle{
+    color: rgb(255, 254, 254);
+    font-size: 2rem;
+}
 
 svg{
     width: 5rem;
 }
 
-.iconstyle{
-    
-}
 
 
-.info .p{
-    max-width: 500px;
-    margin: 0 auto;
+
+
+p{
     font-size: 1.8rem;
-    Line-height: 1.3em;
-   
+    color: rgb(255, 255, 255);
+
 }
+
+
 
  @media only screen and (max-width: 768px) {
     .info .p{

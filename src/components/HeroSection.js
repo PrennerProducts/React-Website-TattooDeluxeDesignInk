@@ -22,7 +22,7 @@ function HeroSection() {
       sequence={[
         3000, // Waits 1s
         'Herzlich  Willkommen bei PP INK', // Types 'One'
-        5000, // Waits 1s
+        3000, // Waits 1s
           // Waits 2s
         '',// Types 'Three' without deleting 'Two'
         () => {

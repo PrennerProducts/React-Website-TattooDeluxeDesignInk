@@ -1,0 +1,61 @@
+.zeiten {
+    background-color: rgba(255, 127, 80, 0);
+    background-image: url('../../public/images/div2.png');
+    background-position: center center;
+    background-size: 190%;
+    z-index: -100000;
+    height:370px;
+    width: 80%;
+    display: inline-block;
+}
+.textclass{ 
+    
+     /* border: 8px solid rgb(25, 23, 25); */
+    z-index: -100000;
+    height:350px;
+    width: auto;
+    display: inline-block;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+
+.zeiten h1 {
+    padding: 20px;
+    font-size: 50px;
+    color: rgb(234, 232, 232) ;
+   
+    /* border: 5px solid rgb(184, 34, 34); */
+    padding-bottom: 0px;
+    margin-bottom: -20px;
+}
+
+.left_zeiten{
+    /* border: 2px solid rgb(255, 255, 255); */
+    width: 50%;
+    height: 290px;
+    position: absolute;
+    justify-content: left;
+    align-items: left;
+    left: 0;
+    font-size: 0.5rem;
+    text-align: center;
+    padding-left:  10%;
+    margin-top: -40px;
+  
+
+}
+
+.right_zeiten{
+    /* border: 2px solid rgb(255, 255, 255); */
+    width: 50%;
+    height: 290px;
+    position: absolute;
+    justify-content: right;
+    align-items: right;
+    right: 0;
+    font-size: 0.5rem;
+    text-align: center;
+    padding-right: 10%;
+    margin-top: -40px;
+}

@@ -1,14 +1,19 @@
 
 .container{
     height: 200vh;
+    width: 100%;
     background-image: url('../../../public/images/contact2.jpg');
     background-attachment: fixed;
-    background-size: 60%;
+    background-size: 50%;
+    background-position: center;
     display: block;
+    
    
 }
 
-
+.aussen{
+    display: inline;
+}
 
 
 

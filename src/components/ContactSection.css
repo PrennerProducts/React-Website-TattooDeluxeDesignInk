@@ -1,9 +1,10 @@
 
-.container{
-    display: flex;
-    height: 100vh;;
+.section-container{
+    position: absolute;
+    display: inline-block;
+    height: 200vh;;
     width: 100%;
-    border: 3px solid rgb(8, 21, 197);
+    /* border: 3px solid rgb(8, 21, 197); */
     color:white;
     align-items: center;
     justify-content: center;
@@ -15,34 +16,49 @@
    
 }
 
-.contactSection__wrapper{
-    display: fixed;
-    margin-left: 10%;
+.contactSection__wrapper_left{
+    margin-top: 30px;
+    position: absolute;
+    left: 0;
+    display: row;
+    padding-left: 15%;
+    width: 50%;
+    height: 100vh;
+    /* border: 3px solid rgb(4, 89, 95); */
+    align-items: left;
+    justify-content: left;
+    
+
+}
+
+.contactSection__wrapper_right{
+    margin-top: 30px;
+    position: absolute;
+    right: 0;
+    display: row;
+    padding-right: 10%;
+    width: 40%;
+    /* border: 2px solid rgb(226, 233, 9); */
+    align-items: right;
+    justify-content: right;
     margin-right: 10%;
-    height: 100%;
-    width: 100%;
-    border: 3px solid rgb(241, 9, 179);
-    align-items: center;
-    justify-content: center;
 
 }
 
-.left{
-    height: 100vh;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
+.map{
+    position: absolute;
+    bottom:10%;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    
 }
 
-.right{
-    height: 100vh;
-    width: 10%;
-    display: flex;
-    flex-direction: column;
-}
+
+
+
  
 h1 {
-    margin: 1rem 0 1rem 0;
     color: rgb(255, 255, 255) ;
     font-size: 8rem;
     

@@ -1,54 +1,36 @@
-import React from 'react'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import './ContactForm.css'
 
 
+const ContactForm = () => {const form = useRef();
 
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-
-const ContactForm = () => {
-  const [formStatus, setFormStatus] = React.useState('Send')
-  const onSubmit = (e) => {
-    e.preventDefault()
-    setFormStatus('Submitting...')
-    const { name, email, message } = e.target.elements
-    let conFom = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
-    }
-    console.log(conFom)
+    emailjs.sendForm('service_woq2he8', 'service_woq2he8', form.current, 'etQGduZrbhhtzgCMx')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
   }
   return (
-    <div className="container mt-5">
-      <h2 className="mb-3">React Contact Form Component Example</h2>
-      <form onSubmit={onSubmit}>
-        <div className="mb-3">
-          <label className="form-label" htmlFor="name">
-            Name
-          </label>
-          <input className="form-control" type="text" id="name" required />
+    <div className="contactFormContainer">
+      <h2>Kontaktformular</h2>
+      <form ref={form} onSubmit={sendEmail}>
+        <div className="form-group">
+          <label>Name</label>
+          <input type="text" name="user_name" required />
+          <label>Email</label>
+          <input type="email" name="user_email" required />
+          <label>Telefon Nr.</label>
+          <input type="telefon" name="user_telefon" required />
+      
+          <label>Nachricht</label>
+          <textarea name="message" required />
+          <input type="submit" value="Senden" style={{width:'150px', height:'50px', marginTop: '20px'}} onClick={sendEmail}/>
         </div>
-        <div className="mb-3">
-          <label className="form-label" htmlFor="email">
-            Email
-          </label>
-          <input className="form-control" type="email" id="email" required />
-        </div>
-        <div className="mb-3">
-          <label className="form-label" htmlFor="telnr">
-            Telefon Nr.
-          </label>
-          <input className="form-control" type="email" id="email" required />
-        </div>
-        <div className="mb-3">
-          <label className="form-label" htmlFor="message">
-            Nachricht
-          </label>
-          <textarea className="form-control" id="message" required />
-        </div>
-        <button className="btn btn-danger" type="submit">
-          {formStatus}
-        </button>
       </form>
     </div>
   )

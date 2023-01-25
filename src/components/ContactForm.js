@@ -2,9 +2,34 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './ContactForm.css'
 import Alert from 'react-bootstrap/Alert';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const ContactForm = () => {
+ //Alert Totast
+  const notify = () =>{
+    toast.success('🦄 Nachricht wurde gesendet!', {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      });
+  }
+
+  const clearInput = () => {
+    document.getElementById('user_name').value = '';
+    document.getElementById('user_email').value = '';
+    document.getElementById('user_telefon').value = '';
+    document.getElementById('message').value = '';
+  }
+  
+ 
+ 
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -16,32 +41,46 @@ const ContactForm = () => {
       form.current, 
       'etQGduZrbhhtzgCMx')
       .then((result) => {
+        notify();
+        clearInput();
           console.log(result.text);
           console.log('message sent');
-          <Alert kex='success' variant="success" severity="success">
-               This is a success alert — check it out!
-          </Alert>
       }, (error) => {
           console.log(error.text);
       });
   }
+
+  
   return (
     <div className="contactFormContainer">
       <h2>Kontaktformular</h2>
       <form ref={form} onSubmit={sendEmail}>
         <div className="form-group">
           <label>Name</label>
-          <input type="text" name="user_name" required />
+          <input type="text" name="user_name" id="user_name"  required />
           <label>Email</label>
-          <input type="email" name="user_email" required />
+          <input type="email" name="user_email" id="user_email" required />
           <label>Telefon Nr.</label>
-          <input type="telefon" name="user_telefon" required />
+          <input type="telefon" name="user_telefon" id="user_telefon" required />
       
           <label>Nachricht</label>
-          <textarea name="message" required />
-          <input type="submit" value="Senden" style={{width:'150px', height:'50px', marginTop: '20px'}} onClick={sendEmail}/>
+          <textarea name="message"  id="message" required />
+          <input type="submit" value="Senden" style={{width:'150px', height:'50px', marginTop: '20px'}} />
         </div>
       </form>
+      {/* Allert Toast Container */}
+      <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+          />
     </div>
   )
 }

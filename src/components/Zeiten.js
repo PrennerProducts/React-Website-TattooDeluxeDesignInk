@@ -8,20 +8,19 @@ export default function Zeiten() {
             <h1>Öffnungszeiten</h1>
             <h3 style={{paddingTop: '40px'}}>Termin nur nach vereinbahrung!</h3>
             <div className="left_zeiten">
-                <p style={{textAlign: 'center'}}>Sommer:</p>
-                <p>Mo: 09:00 - 17:00 Uhr</p>
-                <p>Di: 09:00 - 17:00 Uhr</p>
-                <p>Mi: 09:00 - 17:00 Uhr</p>
-                <p>Do: 09:00 - 17:00 Uhr</p>
-                <p>Fr: 09:00 - 17:00 Uhr</p>
+                <p>Mo: 12:00 - 19:00</p>
+                <p>Di: nach Terminvereinbahrung</p>
+                <p>Mi: nach Terminvereinbahrung</p>
+                <p>Do: nach Terminvereinbahrung</p>
+                <p>Fr: nach Terminvereinbahrung</p>
             </div>
         <div className="right_zeiten">
-                <p>Winter:</p>
-                <p>Mo: 09:00 - 17:00 Uhr</p>
-                <p>Di: 09:00 - 17:00 Uhr</p>
-                <p>Mi: 09:00 - 17:00 Uhr</p>
-                <p>Do: 09:00 - 17:00 Uhr</p>
-                <p>Fr: 09:00 - 17:00 Uhr</p>
+                <p>PP INK TATTOOSTUDIO</p>
+                <p>Griffner Straße 14</p>
+                <p>9100 Völkermarkt</p>
+                <p>Österreich</p>
+                <p>Telefon: 0664/4274644</p>
+             
         </div>
         </div>
        

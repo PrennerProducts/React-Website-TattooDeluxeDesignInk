@@ -1,16 +1,26 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './ContactForm.css'
+import Alert from 'react-bootstrap/Alert';
 
 
-const ContactForm = () => {const form = useRef();
+const ContactForm = () => {
+  const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_woq2he8', 'service_woq2he8', form.current, 'etQGduZrbhhtzgCMx')
+    emailjs.sendForm(
+      'service_woq2he8', 
+      'template_k6kc3xs', 
+      form.current, 
+      'etQGduZrbhhtzgCMx')
       .then((result) => {
           console.log(result.text);
+          console.log('message sent');
+          <Alert kex='success' variant="success" severity="success">
+               This is a success alert — check it out!
+          </Alert>
       }, (error) => {
           console.log(error.text);
       });

@@ -2,8 +2,11 @@
 
 
 .uebermich-container{
-    background:  url('/public/images/background2.jpg' ) center center/cover no-repeat ;
-    height: 100vh;
+    background:  url('/public/images/background3.jpg' ) center center/cover no-repeat ;
+    background-size: 'cover';
+    background-position: center center;
+
+    height: 150vh;
     display: flex;
     align-items: center;
     color:rgb(255, 255, 255);
@@ -17,15 +20,16 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 45%;
+    height: 100%;
  
 
 }
 
 .right{
-    flex: 1;
-    background-color: rgba(0, 0, 0, 0.55);
-    border-radius: 30px;
+    flex: 2;
+   
+    position: relative;
+    top: -150px;
     
 }
 
@@ -34,13 +38,14 @@
     height: 70vh;
     border-radius: 30px;
     position: absolute;
+    top: 10%;
     overflow: hidden;
 }
 
 .card.bg {
-    position: relative;
-    top: -10%;
-    left: -5%;
+    position: absolute;
+    top: 8%;
+    left: 15%;
     background-color: rgba(0, 0, 0, 0.55);
 }
 
@@ -75,11 +80,13 @@
     font-weight: 300;
 }
 
-
 .titel{
+    font-size: 5rem;
+}
+
+.titel h1{
     margin: 20px 20px;
-    font-weight: 400;
-    ;
+    font-size: 1rem
 }
 
 .sub{
@@ -87,6 +94,13 @@
 }
 .text{
     margin: 20px 20px;
+    font-size: 1.8rem;
+   
+}
+.text-container{
+    background-color: rgba(14, 12, 12, 0.719);
+    margin-right: 50px;
+    border-radius: 30px; 
 }
 
 

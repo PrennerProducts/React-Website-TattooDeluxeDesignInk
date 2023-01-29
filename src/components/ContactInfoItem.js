@@ -1,11 +1,11 @@
-import React from 'react'
+import React, {useRef, useEffect, useState} from 'react'
 import { IconContext } from 'react-icons'
 import { MdPlace } from 'react-icons/md'
 import { BsFacebook } from 'react-icons/bs'
 import './ContactInfoItem.css'
 import { render } from 'react-dom';
 import ReactWhatsapp from 'react-whatsapp';
-
+import {useInView} from 'react-intersection-observer'
 
 export default function ContactInfoItem({
     
@@ -15,16 +15,21 @@ export default function ContactInfoItem({
     
 }) {
 
-  const clickHandler = () => {
-  if(type === 'WhatsApp'){
-    <ReactWhatsapp number="00436644274644" message="Hallo, ich habe eine Frage zu ..." />
-  }
-  return alert('Hallo');
-  }
+  const {ref: myRef, inView: myElementIsVisble} = useInView();
+
+ 
+
+
+  // const clickHandler = () => {
+  // if(type === 'WhatsApp'){
+  //   <ReactWhatsapp number="00436644274644" message="Hallo, ich habe eine Frage zu ..." />
+  // }
+  // return alert('Hallo');
+  // }
 
 
   return (
-    <div className='ItemStyles'>
+    <div ref={myRef} className='ItemStyles' >
      
         <IconContext.Provider value={{ size: "10rem" }}>
         <div className="icon" >{icon}</div>

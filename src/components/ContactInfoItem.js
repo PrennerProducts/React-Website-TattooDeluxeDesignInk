@@ -29,7 +29,7 @@ export default function ContactInfoItem({
 
 
   return (
-    <div ref={myRef} className='ItemStyles' >
+    <div ref={myRef} className={` ${myElementIsVisble ? 'ItemStyles' : 'ItemStylesHidden' }`} >
      
         <IconContext.Provider value={{ size: "10rem" }}>
         <div className="icon" >{icon}</div>

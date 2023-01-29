@@ -1,12 +1,16 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './ContactForm.css'
 import Alert from 'react-bootstrap/Alert';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import {useInView} from 'react-intersection-observer'
 
 
 const ContactForm = () => {
+  // Animation Form
+  const {ref: formRef, inView: formVisabile} = useInView();
+  
  //Alert Totast
   const notify = () =>{
     toast.success('🦄 Nachricht wurde gesendet!', {
@@ -52,7 +56,7 @@ const ContactForm = () => {
 
   
   return (
-    <div className="contactFormContainer">
+    <div ref={formRef} className={`${formVisabile ? 'contactFormContainer' : 'contactFormContainerHidden' }`} >
       <h2>Kontaktformular</h2>
       <form ref={form} onSubmit={sendEmail}>
         <div className="form-group">

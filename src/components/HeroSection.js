@@ -23,7 +23,7 @@ function HeroSection() {
         1000, // Waits 1s
         'Herzlich  Willkommen bei PP INK', // Types 'One'
         3000, // Waits 1s
-        'Ihrem Zuhause für realistische Tattoos', // Types 'One'
+        'Ihrem Zuhause für Tattoos', // Types 'One'
         3000, // Waits 1s
         
           // Waits 2s
@@ -43,7 +43,7 @@ function HeroSection() {
     
     />
        </div>
-       <img className='herologo' src="/images/3dLogo.gif" alt="logocube" style={{width:'20%'}} />    
+       <img className='herologo' src="/images/white_logo_transparent_background.png" alt="logocube" style={{width:'20%'}} />    
        <video style={{with:'250%'}} src="/videos/Tattoo_zoom.mp4" autoPlay loop muted />
     </div>
   );

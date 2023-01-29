@@ -1,18 +1,22 @@
-import React, {useRef} from 'react'
+import React, {useRef, useEffect, useState} from 'react'
 import './Zeiten.css'
+import {useInView} from 'react-intersection-observer'
 
 export default function Zeiten() {
+  const {ref: zeitenRef, inView: zeitenVisabile} = useInView();
+
+
   return (
-    <div className="zeiten">
+    <div ref={zeitenRef} className={`${zeitenVisabile ? 'zeiten' : 'zeitenHidden'}`}>
         <div className="textclass">
-            <h1>Öffnungszeiten</h1>
-            <p style={{paddingTop: '60px', fontSize: '38px', fontWeight: 'bold'}}>Mo: 12:00 - 19:00</p>
+          
+            {/* <p style={{paddingTop: '60px', fontSize: '38px', fontWeight: 'bold'}}>Mo: 12:00 - 19:00</p>
+            <p style={{paddingTop: '60px', fontSize: '38px', fontWeight: 'bold'}}>Di-Sa nach Terminvereinbahrung</p> */}
             <div className="left_zeiten">
-                <p>Di: nach Terminvereinbahrung</p>
-                <p>Mi: nach Terminvereinbahrung</p>
-                <p>Do: nach Terminvereinbahrung</p>
-                <p>Fr: nach Terminvereinbahrung</p>
-                <p>Sa: nach Terminvereinbahrung</p>
+              <p style={{paddingBottom: '12px', fontSize: '38px', fontWeight: 'bold'}}>Öffnungszeiten:</p>
+                <p>Mo: 12:00 - 19:00</p>
+                <p>Di-Sa nach Terminvereinbahrung</p>
+                
             </div>
         <div className="right_zeiten">
                 <p>PP INK TATTOOSTUDIO</p>

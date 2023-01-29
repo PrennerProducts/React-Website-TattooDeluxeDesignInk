@@ -1,0 +1,21 @@
+
+.Footer{
+    display: block;
+
+    bottom: 0;
+    background-color: blueviolet;
+}
+
+.footer-left{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    background-color: blue;
+}
+
+.footer-right{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    background-color: red;
+}

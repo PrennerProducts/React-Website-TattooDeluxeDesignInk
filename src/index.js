@@ -10,7 +10,7 @@ import Home from "./components/pages/Home";
 import Gallerie from "./components/pages/Gallerie.js";
 import UeberMich from './components/pages/UeberMich.js';
 import Contact from './components/pages/Contact.js';
-
+import Footer from './components/pages/Footer.js';
 
 const AppLayout = () => {
     return (
@@ -21,6 +21,7 @@ const AppLayout = () => {
         <UeberMich />
         <Gallerie />
         <Contact />
+        <Footer />
         
         
         
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
               path: "/",
               element: <Home/>,
           },
+          {
+            path: "/footer",
+            element: <Footer/>,
+        },
         ],
     }
   

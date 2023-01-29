@@ -1,13 +1,25 @@
 .zeiten {
+    transition: all 3s;
+    transform: transLateX(0);
+    opacity: 1;
+
     background-color: rgba(255, 127, 80, 0);
-    background-image: url('../../public/images/div2.png');
+    background-image: url('../../public/images/div4.png');
     background-position: center center;
-    background-size: 190%;
+    background-size: 110%;
     z-index: -100000;
-    height:370px;
-    width: 80%;
+    height:400px;
+    width: 100%;
     display: inline-block;
 }
+.zeitenHidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: transdlateX(-100%);
+    transition: all 5s;
+}
+
+
 .textclass{ 
     
      /* border: 8px solid rgb(25, 23, 25); */
@@ -19,15 +31,22 @@
     margin-bottom: 0px;
 }
 
+.textclass h1{
+   font-size: 2rem;
+   margin-top: 100px;
+   
+}
+
 
 .zeiten h1 {
     padding: 20px;
-    font-size: 50px;
+    padding-top: 0px;
+    font-size: 60px;
     color: rgb(234, 232, 232) ;
    
     /* border: 5px solid rgb(184, 34, 34); */
     padding-bottom: 0px;
-    margin-bottom: -20px;
+
 }
 
 .left_zeiten{
@@ -37,11 +56,11 @@
     position: absolute;
     justify-content: left;
     align-items: left;
-    left: 0;
+    left: 12%;
     font-size: 0.5rem;
     text-align: center;
-    padding-left:  10%;
-    margin-top: -70px;
+    padding-left:  0%;
+    margin-top: 120px;
   
 
 }
@@ -57,9 +76,9 @@
     position: absolute;
     justify-content: right;
     align-items: right;
-    right: 0;
+    right: 8%;
     font-size: 0.5rem;
     text-align: center;
-    padding-right: 10%;
-    margin-top: -70px;
+    padding-right: 0%;
+    margin-top: 120px;
 }

@@ -1,5 +1,8 @@
 
 .contactFormContainer{
+    transition: all 3s;
+    transform: transLateX(0);
+    
     height:565px;
     width: 100%;
     background: rgba(0, 0, 0, 0.295);
@@ -12,6 +15,12 @@
     align-items: left;
     justify-content: left;
     /* border: 2px solid rgb(18, 192, 26); */
+}
+.contactFormContainerHidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: transdlateX(-100%);
+   transition: all 5s;
 }
 
 label{

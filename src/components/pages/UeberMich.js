@@ -2,6 +2,13 @@ import React from 'react'
 import './UeberMich.css'
 
 function UeberMich() {
+      //Open Links for ContactInfoItem
+
+  const openLink = (link) => {
+    let theForm = document.getElementById('award');
+    theForm.submit();
+  }
+
     return (
         <div className='uebermich-container'>
             <div className='left'>
@@ -15,36 +22,27 @@ function UeberMich() {
                 <h1 className='titel'>Über mich ...</h1>
                     <div className='text-container'>
                         <p className='text'>
-                        "Ich bin Philipp Paulitsch , der Gründer von PP-Ink, dem neuesten und aufregendsten Tattoostudio in Völkermarkt. 
-                        Ich habe meine Leidenschaft für die Tätowierkunst vor 5 Jahren entdeckt und habe seitdem hart daran gearbeitet, meine 
-                        Fähigkeiten und Techniken zu verbessern.
+                        Hallo, ich bin Philipp, ein professioneller Tattoo-Künstler mit einer Leidenschaft für das Schaffen von unvergesslichen Kunstwerken unter der Haut. Ich habe kürzlich mein eigenes, modern ausgestattetes Tattoostudio eröffnet, um meine Kreativität und meine hohen Ansprüche an die Qualität meiner Arbeit auszuleben.
                         </p>
                         <p className='text'>
-                        Ich bin spezialisiert auf Realismus-Stil Tattoos und liebe es, die Gesichter und Körper meiner Kunden in atemberaubende Kunstwerke 
-                        zu verwandeln. Ich arbeite eng mit meinen Kunden zusammen, um sicherzustellen, dass jede Tätowierung ihre Persönlichkeit und
-                        Geschichte widerspiegelt.
+                        Seit meiner Selbstständigkeit im Jahr 2017 als Tätowierer habe ich mich auf Realistic- und Cover-Up-Tattoos spezialisiert. Meine Arbeit zeichnet sich durch höchste Präzision und Detailgenauigkeit aus. Ich verwende ausschließlich hochwertige Materialien und arbeite unter den höchsten Hygienestandards.
                         </p>
                         <p className='text'>
-                        Ich bin stolz darauf, in einem sauberen und sicheren Studio zu arbeiten und immer auf dem neuesten Stand der Technologie und
-                        Sicherheitsmaßnahmen zu sein. Ich bin sehr aufgeregt, in meinem neuen Studio zu arbeiten und meine Leidenschaft für die Tätowierkunst 
-                        mit der Welt zu teilen. Ich bin bestrebt, das bestmögliche Erlebnis für meine Kunden zu schaffen und jede Tätowierung zu einem 
-                        Meisterwerk zu machen.
+                        Zudem verwende ich moderne Technologie, um ein perfektes Ergebnis zu erzielen. Alle Vorlagen werden digital erstellt, um eine maximale Genauigkeit und Kundenzufriedenheit zu garantieren.
                         </p>
                         <p className='text'>
-                        Ich lade Sie herzlich ein, mich in meinem neuen Studio zu besuchen und sich von meiner Arbeit überzeugen zu lassen. Ich freue 
-                        mich darauf, Ihre Träume von einer atemberaubenden Tätowierung zu verwirklichen und Teil Ihrer Reise zu sein. Willkommen bei 
-                        PP-Ink, Ihrem neuen Zuhause für realistische Tätowierungen."
+                        Ich bin stolz darauf, dass ich jedem Kunden eine individuelle Betreuung und Beratung biete, um dessen Wünsche und Vorstellungen perfekt umzusetzen. Bei mir steht das Wohl des Kunden immer im Vordergrund.
+                        </p>
+                        <p className='text'>
+                        Kommen Sie in mein Studio und lassen Sie uns gemeinsam Ihre Vision von einem perfekten Tattoo verwirklichen. Ich freue mich darauf, Sie kennenzulernen und Ihnen ein unvergessliches Kunstwerk sowie eine tolle Atmosphäre und einen entspannten Aufenthalt zu bieten."
                         </p>
                     </div>
-                <div className='award'>
-                    <img src='/images/star.jpg' alt='award-img' className='award-img' />
-                    <div className='award-text'>
-                        <h4 className='award-titel'>Meine Bewertungen</h4>
-                        <p className='award-text'> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                           </div> 
+                <div className='award' >
+                    <a  href='https://g.page/r/CRfZT-_Sz7KAEB0/review' target='_blank' rel='noreferer'>
+                        <img src='/images/bewertung.png' alt='award-img' className='award-img' onClick={openLink} />
+                    </a>
+                    
+                    
                 </div>
                  </div>
         </div>

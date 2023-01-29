@@ -6,7 +6,7 @@
     background-size: 'cover';
     background-position: center center;
 
-    height: 150vh;
+    height: 120vh;
     display: flex;
     align-items: center;
     color:rgb(255, 255, 255);
@@ -27,9 +27,8 @@
 
 .right{
     flex: 2;
-   
     position: relative;
-    top: -150px;
+    top: 0px;
     
 }
 
@@ -63,8 +62,8 @@
 }
 
 .award-img{
-    width:  120px;
-    height: 120px;
+    width:  300px;
+    height: 140px;
     border-radius: 20px;
     margin: 0px 20px;
     margin-bottom: 20px;
@@ -82,6 +81,8 @@
 
 .titel{
     font-size: 5rem;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
 }
 
 .titel h1{
@@ -99,8 +100,8 @@
 }
 .text-container{
     background-color: rgba(14, 12, 12, 0.719);
-    margin-right: 50px;
     border-radius: 30px; 
+    padding: 20px;
 }
 
 

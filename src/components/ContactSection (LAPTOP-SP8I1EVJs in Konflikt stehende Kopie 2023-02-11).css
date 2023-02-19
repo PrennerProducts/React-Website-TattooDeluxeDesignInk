@@ -81,40 +81,40 @@ a {
   @media (max-width:480px){
     .section-container{
         position: absolute;
-        display: row;
-        height: 270vh;;
+        display: column;
+        height: 300vh;;
         width: 100%;
-        /* border: 3px solid rgb(8, 21, 197); */
+        border: 3px solid rgb(8, 21, 197);
         color:white;
         align-items: center;
         justify-content: center;
         text-align: center;
-        background-image: url('../../public/images/contact2.jpg');
-        background-size: contain;
         background-repeat: repeat-y;
+         background-image: url('../../public/images/contact2.jpg');
+        background-size: contain;
        
     }
     
     .contactSection__wrapper_left{
-        margin-top: 30px;
+        margin-top: 0px;
         margin-bottom: 300px;
         position: relative;
         left: 0;
-        display: row;
-        padding-left:5%;        width: 50%;
-        height: contain;
-        /* border: 3px solid rgb(4, 89, 95); */
+        top: -22%;
+        display: column;
+        padding-left: 15%;
+        width: 50%;
+        height:contain;
+        border: 3px solid rgb(229, 129, 6);
         align-items: left;
         justify-content: left;
-     
-        
     
     }
     
     .contactSection__wrapper_right{
-        position: absolute;
-        top: 900px;
-        display: row;
+        position: relative;
+        top: -35%;
+        display: column;
         left: 0;
         width: 40%;
         height: contain;
@@ -126,14 +126,13 @@ a {
     }
     
     .map{
-        position: relative;
-        bottom: 0px;
-        margin-top: 25%;
-        padding-top: 80%;
+        position: absolute;
+        bottom: 0;
+        margin-top: 15%;
+        padding-top: 10%;
         left: 10%;
         right: 10%;
         width: 80%;
-        height: auto;
     }
     
     

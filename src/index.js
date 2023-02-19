@@ -17,14 +17,6 @@ const AppLayout = () => {
         <>
         <MyNavbar />
         <Outlet/>
-        <Home />
-        <UeberMich />
-        <Gallerie />
-        <Contact />
-        <Footer />
-        
-        
-        
         </>
     );
 };
@@ -34,11 +26,11 @@ const router = createBrowserRouter([
     {
         element: <AppLayout/>,
         children: [
-        
-            {
-            path: "/gallerie",
-            element: <Gallerie/>,
-            },
+          {
+            path: "/",
+            element: <Home/>,
+        },
+           
             {
             path: "/uebermich",
             element: <UeberMich/>,
@@ -48,13 +40,18 @@ const router = createBrowserRouter([
             element: <Contact/>,
             },
             {
-              path: "/",
-              element: <Home/>,
-          },
+              path: "/gallerie",
+              element: <Gallerie/>,
+              },
+           
           {
             path: "/footer",
             element: <Footer/>,
         },
+        {
+          path: "/",
+          element: <Home/>,
+      },
         ],
     }
   

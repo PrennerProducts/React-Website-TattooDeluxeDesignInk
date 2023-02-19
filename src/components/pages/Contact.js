@@ -7,11 +7,8 @@ import './Contact.css'
 
 export default function Contact() {
   return (
-    <div className="aussen">
     <div className="container">
-      
       <ContactSection />
-    </div>
     </div>
   )
 }

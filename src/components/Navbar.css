@@ -7,7 +7,7 @@
   background-position: center;
   background-size: 100%;
   height: 80px;
-  width: 100%;
+  width: 103%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,7 +67,9 @@
   /* font-family: 'Rubik Dirt', cursive; */
   /* font-family: 'Grechen Fuemen', cursive;
 font-family: 'Jolly Lodger', cursive; */
-font-family: 'Rowdies', cursive;
+font-family: 'Rowdies', cursive, Arial, sans-serif;
+
+
 /* font-family: 'Rubik Dirt', cursive; */
 
   font-size: 30px;
@@ -177,8 +179,114 @@ font-family: 'Rowdies', cursive;
     color: #242424;
     transition: 250ms;
   }
-  
 
+}
+@media screen and (max-width:480px) {
 
+  .navbar {
+    /* background: linear-gradient(1770deg, rgb(0, 0, 0) 10%, rgb(18, 20, 38) 50%, rgb(0, 0, 0) 10%); */
+    background-color: rgba(59, 59, 59, 0);
+    background-image: url('../../public/images/div4.png');
+    background-position: left center;
+    background-size:100%;
+    background-repeat: no-repeat;
+    height:79px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky !important;
+    top: 0;
+    z-index: 9999;
+  }
+  .NavbarItems {
+    position: realative;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    left: -100%;
+    height: 100vh;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background: #242222;
+    position:absolute;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    transition: all 0.6s ease;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .nav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-links:hover {
+    background-color: #fff;
+    color: #242424;
+    border-radius: 0;
+  }
+
+  .navbar-logo {
+    margin-left: 1rem;
+    display: flex;
+  }
+  .logo1{
+    height: 10 px;
+  }
+  .logo2{
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -6%;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: white;
+  }
+
+  .fa-times {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: #fff;
+    padding: 14px 20px;
+    border: 1px solid #fff;
+    transition: all 0.3s ease-out;
+  }
+
+  .nav-links-mobile:hover {
+    background: #fff;
+    color: #242424;
+    transition: 250ms;
+  }
 
 }

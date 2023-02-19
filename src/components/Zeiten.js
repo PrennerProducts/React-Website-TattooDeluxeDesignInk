@@ -11,9 +11,9 @@ export default function Zeiten() {
         <div className="textclass">
           
             {/* <p style={{paddingTop: '60px', fontSize: '38px', fontWeight: 'bold'}}>Mo: 12:00 - 19:00</p>
-            <p style={{paddingTop: '60px', fontSize: '38px', fontWeight: 'bold'}}>Di-Sa nach Terminvereinbahrung</p> */}
+            <p style={{paddingTop : '60px', fontSize: '38px', fontWeight: 'bold'}}>Di-Sa nach Terminvereinbahrung</p> */}
             <div className="left_zeiten">
-              <p style={{paddingBottom: '12px', fontSize: '38px', fontWeight: 'bold'}}>Öffnungszeiten:</p>
+              <p className='zeitenheader'>Öffnungszeiten:</p>
                 <p>Mo: 12:00 - 19:00</p>
                 <p>Di-Sa nach Terminvereinbahrung</p>
                 

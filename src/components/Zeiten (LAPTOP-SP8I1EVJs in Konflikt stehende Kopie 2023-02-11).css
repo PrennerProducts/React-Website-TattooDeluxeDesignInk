@@ -13,6 +13,7 @@
     display: inline-block;
     padding-bottom: 0px;
     margin-bottom: 0px;
+    margin-top: -10%;
     /* border: 2px solid rgba(255, 255, 255, 0.5); */
 }
 .zeitenHidden{
@@ -94,16 +95,17 @@
 
 @media (max-width:480px){
     .zeiten {
-        background-image: none !important;
-        background-position: center bottom;
-        background-size: 110%;
+        transition: all 3s;
+        transform: transLateX(0);
+        background: none;
+        /* background-color: blue; */
+        opacity: 1;
         z-index: -100;
-        height:160px;
+        height: 35%;
         width: 100%;
-        display: flex;
-        padding-bottom: 70%;
-        border: 2px solid rgba(255, 255, 255, 0.5);
-      
+        display: contain;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
     }
     .zeitenHidden{
         opacity: 0;
@@ -113,55 +115,59 @@
     }
     
     
-    .textclass{ 
-        
-         border: 1px solid rgb(202, 16, 202);
+    .textclass{
+        border: 8px solid rgb(202, 16, 202);
         z-index: -1000;
-        height:350px;
+        height:100%;
         width: auto;
-        display: flex;
-     
+        display: block;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        padding-top: 0px;
     }
     
     .textclass h1{
-       font-size: 4rem;
-       margin-top: -40px;
+       font-size: 2rem;
+       margin-top: -400px;
        border: 8px solid rgb(16, 202, 25);
-    
     }
     
     
     .zeiten h1 {
         padding: 0px;
         padding-top: 0px;
-        margin-bottom: 20px;
+        border: 5px solid rgb(184, 34, 34);
+        font-weight: bold;
+        
     
     }
     
     .left_zeiten{
         /* border: 2px solid rgb(255, 255, 255); */
-        width: 50%;
+        width: 100vw;
         height: 290px;
         position: absolute;
         justify-content: left;
         align-items: left;
-        left: 12%;
+        left: 5%;
         font-size: 0.5rem;
         text-align: center;
         padding-left:  0%;
-        margin-top: 120px;
+        margin-top: 10px;
+       
       
     
     }
     .left_zeiten p{
+        font-size: 2rem;
+        text-align: center;
         text-align: left;
         padding-left:  0;
         padding-bottom: 10px;
-        padding-top: 10px;
-        font-weight: 1px;
-        display: flex;
-        align-items: center;
-        justify-content: left;
+        padding-top: 0px;
+        position: relative;
+        top: 10px;
     }
     
     .right_zeiten{

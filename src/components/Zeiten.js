@@ -14,8 +14,9 @@ export default function Zeiten() {
             <p style={{paddingTop : '60px', fontSize: '38px', fontWeight: 'bold'}}>Di-Sa nach Terminvereinbahrung</p> */}
             <div className="left_zeiten">
               <p className='zeitenheader'>Öffnungszeiten:</p>
-                <p>Mo: 12:00 - 19:00</p>
-                <p>Di-Sa nach Terminvereinbahrung</p>
+               
+                <p>Montag - Samstag:</p>
+                <p>nach Terminvereinbahrung</p>
                 
             </div>
         <div className="right_zeiten">

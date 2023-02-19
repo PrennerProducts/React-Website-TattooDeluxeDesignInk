@@ -63,7 +63,12 @@ function MyNavbar() {
               <Link to="/contact" className="nav-links" onClick={closeMobileMenue}>
                 Kontakt
               </Link>
-            </li>    
+            </li>  
+            <li className="nav-item">
+              <Link to="/impressum" className="nav-links" onClick={closeMobileMenue}>
+                Impressum
+              </Link>
+            </li>   
           </ul>
           {/* {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>} */}
         </div>

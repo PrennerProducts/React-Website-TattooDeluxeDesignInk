@@ -8,7 +8,7 @@
     background-position: bottom bottom;
     background-size: 120%;
     z-index: -100;
-    height:280px;
+    height:300px;
     width: 100%;
     display: inline-block;
     padding-bottom: 0px;
@@ -102,7 +102,7 @@
         width: 100%;
         display: flex;
         padding-bottom: 70%;
-        border: 2px solid rgba(255, 255, 255, 0.5);
+        /* border: 2px solid rgba(255, 255, 255, 0.5); */
       
     }
     .zeitenHidden{
@@ -115,7 +115,7 @@
     
     .textclass{ 
         
-         border: 1px solid rgb(202, 16, 202);
+         /* border: 1px solid rgb(202, 16, 202); */
         z-index: -1000;
         height:350px;
         width: auto;
@@ -126,7 +126,7 @@
     .textclass h1{
        font-size: 4rem;
        margin-top: -40px;
-       border: 8px solid rgb(16, 202, 25);
+       /* border: 8px solid rgb(16, 202, 25); */
     
     }
     
@@ -150,8 +150,8 @@
         text-align: center;
         padding-left:  0%;
         margin-top: 120px;
-      
-    
+        padding-top: 8%;
+
     }
     .left_zeiten p{
         text-align: left;

@@ -62,6 +62,11 @@ video {
     right: 0px;
 }
 
+.hero-footer {
+    position: absolute;
+    bottom:  0;
+   
+}
 
 @media (max-width:480px){
 
@@ -87,7 +92,9 @@ video {
     
     }
     .herologo{
-        display: none;
+        display: center;
+        width: 100%;
+
     }
     .typeAnimation{
         display: none;

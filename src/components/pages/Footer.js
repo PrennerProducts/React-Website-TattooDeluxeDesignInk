@@ -14,10 +14,8 @@ export default function Footer() {
         </div>
         <div className="footer-right">
             <p>PP INK TATTOOSTUDIO</p>
-            <p>Griffner Straße 14</p>
-            <p>9100 Völkermarkt</p>
-            <p>Österreich</p>
-            <p>Telefon: 0664/4274644</p>
+            <p>Impressum</p>
+            
         </div>
       
     </div>

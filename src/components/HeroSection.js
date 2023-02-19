@@ -3,13 +3,17 @@ import '../App.css'
 import { Button } from './Button'
 import './HeroSection.css'
 import { TypeAnimation } from 'react-type-animation'
-
+import Footer from './pages/Footer'
+import UeberMich from './pages/UeberMich'
+import Gallerie from './pages/Gallerie'
 
 
 function HeroSection() {
+
+
+
   return (
     <div className="hero-container">
-        
        
     
       {/* <div className="gif-container">
@@ -44,8 +48,11 @@ function HeroSection() {
     />
        </div>
        <img className='herologo' src="/images/white_logo_transparent_background.png" alt="logocube"  />    
-       <video style={{with:'250%'}} src="/videos/Tattoo_zoom.mp4" autoPlay loop muted />
+       <video style={{with:'250%'}} src="/videos/Tattoo_zoom.mp4" autoPlay loop muted  />
+      
+      
     </div>
+   
   );
 }
 

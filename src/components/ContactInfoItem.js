@@ -11,11 +11,11 @@ export default function ContactInfoItem({
     
     icon= <BsFacebook className='iconstyle'/>,
     text='This is  HAALLLOOS',
-    type= 'WhatsApp'
+    type= 'WhatsApp' 
     
 }) {
 
-  const {ref: myRef, inView: myElementIsVisble} = useInView();
+  const {ref: myRef, inView: myElementIsVisble} = useInView({triggerOnce: true});
 
  
 
@@ -29,14 +29,16 @@ export default function ContactInfoItem({
 
 
   return (
-    <div ref={myRef} className={` ${myElementIsVisble ? 'ItemStyles' : 'ItemStylesHidden' }`} >
-     
-        <IconContext.Provider value={{ size: "10rem" }}>
-        <div className="icon" >{icon}</div>
-        </IconContext.Provider>
-        <div className="info">
-            <p>{text}</p>
-        </div>
+    <div className="itemstylecontainer">
+      <div ref={myRef} className={` ${myElementIsVisble ? 'ItemStyles' : 'ItemStylesHidden' }`} >
+      
+          <IconContext.Provider value={{ size: "10rem" }}>
+          <div className="icon" >{icon}</div>
+          </IconContext.Provider>
+          <div className="info">
+              <p>{text}</p>
+          </div>
+      </div>
     </div>
     
   )

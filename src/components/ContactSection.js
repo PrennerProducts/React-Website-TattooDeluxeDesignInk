@@ -35,7 +35,6 @@ export default function ContactSection() {
             <h2>So erreichst du uns...</h2>
               <div className="zeiten">
                 <Zeiten />
-                
               </div>
               <div className="contactSection__wrapper_left">
                    <a href='https://www.facebook.com/PPINKTATTOOSTUDIO/' target='_blank' rel='noreferer'>

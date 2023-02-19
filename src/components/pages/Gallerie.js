@@ -44,121 +44,132 @@ import a31 from './gallerie/a31.jpg';
 const Gallerie = () =>{
 
     let data =[
+      
+    
         {
-            id: 8,
+            id: 1,
             imgSrc: a1,
         },
         {
-            id: 9,
-            imgSrc: a2,
+            id: 18,
+            imgSrc: a20,
         },
         {
-            id: 10,
+            id: 25,
+            imgSrc: a28,
+        },
+      
+       
+        {
+            id: 27,
+            imgSrc: a30,
+        },
+        {
+            id: 3,
             imgSrc: a3,
         },
+        
         {
-            id: 11,
+            id: 4,
             imgSrc: a4,
         },
         {
-            id: 12,
+            id: 5,
             imgSrc: a5,
         },
         {
-            id: 13,
+            id: 6,
             imgSrc: a6,
         },
         {
-            id: 14,
+            id: 7,
             imgSrc: a7,
         },
         {
-            id: 15,
+            id: 8,
             imgSrc: a8,
         },
         {
-            id: 16,
-            imgSrc: a9,
+            id: 26,
+            imgSrc: a29,
         },
         {
-            id: 17,
+            id: 10,
             imgSrc: a10,
         },
         {
-            id: 18,
+            id: 11,
             imgSrc: a11,
         },
        
         {
-            id: 20,
+            id: 12,
             imgSrc: a13,
         },
         {
-            id: 21,
+            id: 13,
             imgSrc: a14,
         },
         {
-            id: 22,
+            id: 14,
             imgSrc: a15,
         },
+      
         {
-            id: 23,
-            imgSrc: a16,
-        },
-        {
-            id: 24,
+            id: 16,
             imgSrc: a17,
         },
+        
         {
-            id: 25,
+            id: 20,
+            imgSrc: a22,
+        },
+        
+        {
+            id: 15,
+            imgSrc: a16,
+        },
+
+        {
+            id: 17,
             imgSrc: a18,
+        },
+        
+       
+       
+        {
+            id: 19,
+            imgSrc: a21,
         },
        
         {
-            id: 27,
-            imgSrc: a20,
-        },
-        {
-            id: 28,
-            imgSrc: a21,
-        },
-        {
-            id: 29,
-            imgSrc: a22,
-        },
-        {
-            id: 30,
+            id: 21,
             imgSrc: a23,
         },
         {
-            id: 31,
+            id: 22,
             imgSrc: a24,
         },
         {
-            id: 32,
+            id: 23,
             imgSrc: a25,
         },
       
         {
-            id: 34,
+            id: 24,
             imgSrc: a27,
         },
         {
-            id: 35,
-            imgSrc: a28,
+            id: 9,
+            imgSrc: a9,
         },
+       
+       
         {
-            id: 36,
-            imgSrc: a29,
-        },
-        {
-            id: 37,
-            imgSrc: a30,
-        },
-        {
-            id: 38,
+            id: 28,
             imgSrc: a31,
         },
+       
 
     ]
     const [model, setModel] = useState(false);
@@ -175,7 +186,7 @@ const Gallerie = () =>{
     
    
       <div className="h1div">
-        {/* <h1 >  Gallerie</h1> */}
+        <h1 >  Gallerie</h1>
       </div>
       <div className={model? "model open" : "model"}>
         <img src={tempImgSrc} alt="pic" />

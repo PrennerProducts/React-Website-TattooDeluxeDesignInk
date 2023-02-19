@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Jolly+Lodger&family=Rowdies&family=Rubik+Dirt&display=swap');
+
+
 .gallery{
     -webkit-column-count: 3;
     -moz-column-count: 3;
@@ -5,16 +8,28 @@
     -webkit-column-width: 33%;
     -moz-column-width: 33%;
     column-width: 33%;
-    padding: 0 12px;
+    padding-top: 0px;
     background-color:  rgba(0, 0, 0, 0.573);
-   
+    position:absolute;
+    top: 0;
 }
 
 .h1div{
     /*align into center*/
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.573);
-    padding: 8px;
+    font-family: 'Rowdies', cursive;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px;
+    width: 100%;
+    position:absolute;
+    top: 0;
+    margin-top: 80px;
+    z-index: 9;
+}
+
+h1{
+    font-family: 'Rowdies';
+    font-size: medium;
 }
 
 
@@ -96,3 +111,9 @@
 
 }
 
+@media (max-width:480px){
+    .h1div{
+      display: none;
+    }
+    
+}

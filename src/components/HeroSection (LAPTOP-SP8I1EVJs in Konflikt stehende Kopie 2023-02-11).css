@@ -4,8 +4,7 @@ video {
     width: 100%;
     height: 100vh;
     position: fixed;
-    z-index: -11;
-    opacity: 1;
+    z-index: -1;
 }
 
 .hero-container {
@@ -36,7 +35,25 @@ video {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.gif-container {
+   
+    height:500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2); */
+    object-fit: contain;
+    justify-content: top;
+    align-items: top;
+}
+.gif-img {
+    justify-content: center;
+    width: 0%;
+    height: 100%;
+    object-fit: cover;
 
+}
 
 .hero-btns {
     margin-top: 32px;
@@ -61,7 +78,11 @@ video {
     bottom:  4%;
     right: 0px;
 }
-
+.zeitenheader{
+    padding-bottom: '12px';
+     font-size: '38px';
+     font-weight: 'bold'
+}
 
 @media (max-width:480px){
 

@@ -56,36 +56,36 @@ const ContactForm = () => {
 
   
   return (
-    <div ref={formRef} className={`${formVisabile ? 'contactFormContainer' : 'contactFormContainerHidden' }`} >
-      <h2>Kontaktformular</h2>
-      <form ref={form} onSubmit={sendEmail}>
-        <div className="form-group">
-          <label>Name</label>
-          <input type="text" name="user_name" id="user_name"  required />
-          <label>Email</label>
-          <input type="email" name="user_email" id="user_email" required />
-          <label>Telefon Nr.</label>
-          <input type="telefon" name="user_telefon" id="user_telefon" required />
-      
-          <label>Nachricht</label>
-          <textarea name="message"  id="message" required />
-          <input type="submit" value="Senden" style={{width:'150px', height:'50px', marginTop: '20px'}} />
-        </div>
-      </form>
-      {/* Allert Toast Container */}
-      <ToastContainer
-          position="top-right"
-          autoClose={5000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="dark"
-          />
-    </div>
+      <div ref={formRef} className={`${formVisabile ? 'contactFormContainer' : 'contactFormContainerHidden' }`} >
+        <h2>Kontaktformular</h2>
+        <form ref={form} onSubmit={sendEmail}>
+          <div className="form-group">
+            <label>Name</label>
+            <input type="text" name="user_name" id="user_name"  required />
+            <label>Email</label>
+            <input type="email" name="user_email" id="user_email" required />
+            <label>Telefon Nr.</label>
+            <input type="telefon" name="user_telefon" id="user_telefon" required />
+        
+            <label>Nachricht</label>
+            <textarea name="message"  id="message" required />
+            <input type="submit" value="Senden" style={{width:'150px', height:'50px', marginTop: '20px'}} />
+          </div>
+        </form>
+        {/* Allert Toast Container */}
+        <ToastContainer
+            position="top-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="dark"
+            />
+      </div>
   )
 }
 export default ContactForm

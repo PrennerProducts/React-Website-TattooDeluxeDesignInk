@@ -6,10 +6,13 @@
     background-size: 'cover';
     background-position: center center;
 
-    height: 120vh;
+    height: 140vh;
     display: flex;
     align-items: center;
     color:rgb(255, 255, 255);
+    padding-top: 3%;
+    position: absolute;
+    top: 0;
 }
 
 
@@ -29,6 +32,8 @@
     flex: 2;
     position: relative;
     top: 0px;
+    margin-right: 50px;
+    padding-right: 10px;
     
 }
 
@@ -81,12 +86,15 @@
 
 .titel{
     font-size: 5rem;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
+    font-family: 'Rowdies', cursive;
+    color:rgba(14, 12, 12, 0.719);
+    position: relative;
+    top: 0;
+    text-align: center;
 }
 
 .titel h1{
-    margin: 20px 20px;
+    margin: 20px 0px;
     font-size: 1rem
 }
 
@@ -95,13 +103,16 @@
 }
 .text{
     margin: 20px 20px;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
+    font-family: 'Rowdies', cursive;
    
 }
 .text-container{
     background-color: rgba(14, 12, 12, 0.719);
     border-radius: 30px; 
     padding: 20px;
+    margin-right: 9%;
+    margin-top: 0px;
 }
 
 
@@ -110,26 +121,50 @@
         background:  url('/public/images/background2.jpg' ) center center/cover no-repeat;;
         flex-direction: column;
         text-align: center;
-        margin-top: 1px;
-        height: 140vh;
+        padding-top: 100px;
+        height: 300vh;
+    }
+    .titel{
+        display: none;
     }
     .left{
         width: 100%;
-    
+        margin-bottom: 0px;
+        flex:1;
     }
-    .card{
-        margin-top: 20px;
-        border: 1px solid rgb(123, 118, 118);
-        height: 30vh;
-        ;
+
+    .right{
+        flex: 1;
+        position: relative;
+        top: 0px;
+        
     }
-    .card.bg{
-        display: none
-    }
-    .award{
-        flex-direction: column;
+    .text-container{
+        background-color: rgba(14, 12, 12, 0.719);
+        position:relative;
+        top: 0px;
+        border-radius: 30px; 
+        padding: 0px;
+        margin: 0px;
         align-items: center;
         justify-content: center;
+    }
+    .card{
+        margin-top:0px;
+        border: 1px solid rgb(123, 118, 118);
+        height: 30vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .card.bg{
+        position: absolute;
+        top: 12%;
+        left: 13%;
+        background-color: rgba(0, 0, 0, 0.55);
+    }
+    .award{
+        position: relative;
+        top: 0px;
     }
     .award-text{
         width: 90%;

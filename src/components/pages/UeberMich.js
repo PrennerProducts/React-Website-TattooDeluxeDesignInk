@@ -7,9 +7,14 @@ function UeberMich() {
   const openLink = (link) => {
     let theForm = document.getElementById('award');
     theForm.submit();
-  }
+  };
+
+  const componentDidMount = () =>  {
+    window.scrollTo(0, 0);
+};
 
     return (
+        componentDidMount(),
         <div className='uebermich-container'>
             <div className='left'>
                <div className='card bg'> </div>

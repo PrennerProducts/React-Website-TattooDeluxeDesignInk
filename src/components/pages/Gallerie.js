@@ -178,10 +178,16 @@ const Gallerie = () =>{
     const getImg = (imgSrc) => {
         setTempImgSrc(imgSrc);
         setModel(true);
-    }
+    };
+    
+    //Scroll to top
+    const componentDidMount = () =>  {
+        window.scrollTo(0, 0);
+    };
 
 
   return (
+    componentDidMount(),
     <>
     
    

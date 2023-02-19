@@ -6,7 +6,13 @@ import './Contact.css'
 
 
 export default function Contact() {
+     //Scroll to top
+     const componentDidMount = () =>  {
+      window.scrollTo(0, 0);
+  };
+
   return (
+    componentDidMount(),
     <div className="container">
       <ContactSection />
     </div>

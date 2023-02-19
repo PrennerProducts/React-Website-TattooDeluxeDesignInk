@@ -1,9 +1,11 @@
 import React from 'react'
+import MyNavbar from '../Navbar'
 import './impressum.css'
 
 export default function Impressum() {
   return (
     <div className="impressum-container">
+        <MyNavbar/>
       <h1>Impressum</h1>
         
         <ul>

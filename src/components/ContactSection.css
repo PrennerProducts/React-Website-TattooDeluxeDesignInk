@@ -2,7 +2,7 @@
 .section-container{
     position: absolute;
     display: inline-block;
-    height: 220vh;;
+    height: 200vh;;
     width: 100%;
     /* border: 3px solid rgb(8, 21, 197); */
     color:white;
@@ -48,10 +48,10 @@
 }
 
 .map{
-    position: absolute;
+    position: relative;
     bottom: 0;
-    margin-top: 15%;
-    padding-top: 10%;
+    margin-top: 5%;
+    padding-top: 30%;
     left: 10%;
     right: 10%;
     width: 80%;

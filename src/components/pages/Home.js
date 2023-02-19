@@ -8,7 +8,11 @@ import UeberMich from './UeberMich';
 
 
 function Home() {
+    const componentDidMount = () =>  {
+        window.scrollTo(0, 0);
+    };
     return (
+        componentDidMount(),
         <>
         <HeroSection />
         

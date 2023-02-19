@@ -15,12 +15,37 @@ import ErrorPage from './error-page.js';
 import HeroSection from './components/HeroSection';
 import { Navbar } from 'react-bootstrap';
 import Impressum from './components/pages/impressum.js';
+import './index.css';
 
 const AppLayout = () => {
     return (
         <>
-        <MyNavbar />,
-        <Outlet/>,
+        
+        <MyNavbar />
+        
+        <div className='layout-container'>
+       
+            <div className='layout-item'>
+            <UeberMich/>
+            </div>
+      
+            <div className='layout-item'>
+            <Contact/>
+            </div>
+
+            <div className='layout-item'>
+            <Gallerie/>
+            </div>
+            
+          
+         
+        </div>
+       
+        
+
+        <Outlet/>
+       
+       
       
         
         </>
@@ -58,14 +83,15 @@ const router = createBrowserRouter([
           },
         
         
-           {
-            path: "/impressum",
-            element: <Impressum/>,
-           },
+         
 
       
         ],
     },
+    {
+      path: "/impressum",
+      element: <Impressum/>,
+     },
    
   
 ]);
@@ -77,5 +103,4 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   </React.StrictMode>
 );
 
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(<App />);
+export default AppLayout;

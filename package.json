@@ -1,8 +1,8 @@
 {
-  "homepage":"https://pp-ink-tattoo.studio",
   "name": "tattoo_website",
   "version": "0.1.0",
   "private": true,
+  "homepage":"https://pp-ink-tattoo.studio/",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@googlemaps/react-wrapper": "^1.1.35",
@@ -53,3 +53,4 @@
     ]
   }
 }
+

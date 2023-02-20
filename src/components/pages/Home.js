@@ -16,7 +16,7 @@ function Home() {
         <>
        
             <div className='hero-container'><HeroSection  /> </div>
-            // i want to place >
+           
       
 
         </>

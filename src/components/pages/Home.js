@@ -3,7 +3,7 @@ import '../../App.css';
 import HeroSection from '../HeroSection';
 import Gallerie from './Gallerie';
 import UeberMich from './UeberMich';
-
+import './home.css'
 
 
 
@@ -14,8 +14,10 @@ function Home() {
     return (
         componentDidMount(),
         <>
-        <HeroSection />
-        
+       
+            <div className='hero-container'><HeroSection  /> </div>
+            // i want to place >
+      
 
         </>
     );

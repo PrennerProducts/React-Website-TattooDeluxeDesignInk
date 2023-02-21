@@ -1,5 +1,5 @@
-import * as React from "react";
-import { Routes, Route, Outlet, Link } from "react-router-dom";
+import  React,  {useState, useEffect} from "react";
+import { BrowserRouter, Routes, Route, Outlet, Link } from "react-router-dom";
 import UeberMich from './components/pages/UeberMich';
 import MyNavbar from './components/Navbar';
 import Home from "./components/pages/Home";
@@ -11,15 +11,39 @@ import HeroSection from './components/HeroSection';
 import { Navbar } from 'react-bootstrap';
 import Impressum from './components/pages/impressum.js';
 import './index.css';
+import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 
 
 export default function App() {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);    
+    }, 5000);
+  }, []);
   return (
-    <div>
+    <div className='App'>
+      {
+        loading ?
+       <div className='spinner'>
+            <ClimbingBoxLoader
+            color={'#ffffff'}
+            loading={loading}
+            size={30}
+            cssOverride={{  alignItems: 'center', justifyContent: 'center', marginLeft: 'auto', marginRight: 'auto', marginTop: '20%', marginBottom: 'auto', display: 'fit',}}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+             />
+       </div>
+      :
+        <div>
+    
        
       {/* Routes nest inside one another. Nested route paths build upon
             parent route paths, and nested route elements render inside
             parent route elements. See the note about <Outlet> below. */}
+            
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -34,6 +58,9 @@ export default function App() {
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>
+    </div>
+   
+  }
     </div>
   );
 }

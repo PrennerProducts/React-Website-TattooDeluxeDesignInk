@@ -2,7 +2,7 @@
   "name": "tattoo_website",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://pp-ink-tattoo.studio/",
+  "homepage": "https://pp-ink-tattoo.studio/",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@googlemaps/react-wrapper": "^1.1.35",
@@ -20,6 +20,7 @@
     "react-material-alert": "^2.0.1",
     "react-router-dom": "^6.6.2",
     "react-scripts": "5.0.1",
+    "react-spinners": "^0.13.8",
     "react-toastify": "^9.1.1",
     "react-type-animation": "^2.1.2",
     "react-whatsapp": "^0.3.0",
@@ -53,4 +54,3 @@
     ]
   }
 }
-

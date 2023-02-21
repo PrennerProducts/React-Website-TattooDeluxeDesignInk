@@ -5,14 +5,17 @@ import './HeroSection.css'
 import { TypeAnimation } from 'react-type-animation'
 import Footer from './pages/Footer'
 import UeberMich from './pages/UeberMich'
+import Contact from './pages/Contact'
 import Gallerie from './pages/Gallerie'
-
+import ContactForm from './ContactForm'
+import { BrowserRouter, Routes, Route, Outlet, Link } from "react-router-dom";
 
 function HeroSection() {
 
 
 
   return (
+    <div className="hero-ueberContainer">
     <div className="hero-container">
        
     
@@ -51,6 +54,11 @@ function HeroSection() {
        <video style={{with:'250%'}} src="/videos/Tattoo_zoom.mp4" autoPlay loop muted  />
       
       
+      
+    </div>
+      <UeberMich />
+      <Contact />
+      <Gallerie />
     </div>
    
   );

@@ -14,8 +14,9 @@ function Home() {
     return (
         componentDidMount(),
         <>
-       
+
             <div className='hero-container'><HeroSection  /> </div>
+            // place <UeberMich /> component  here to display it on the home page under the <HeroSection/>
            
       
 

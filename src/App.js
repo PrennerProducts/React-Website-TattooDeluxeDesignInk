@@ -37,26 +37,17 @@ export default function App() {
              />
        </div>
       :
-        <div>
-    
-       
-      {/* Routes nest inside one another. Nested route paths build upon
-            parent route paths, and nested route elements render inside
-            parent route elements. See the note about <Outlet> below. */}
-            
-            <Router>
       <div className="App">
-        <Header />
+      <BrowserRouter>
+        <Navbar />
         <Routes>
-          <Route path="/ueber-mich" element={<UeberMich />} />
-          <Route path="/gallerie" element={<Gallerie />} />
-          <Route path="/kontakt" element={<Contact />} />
           <Route path="/" element={<Home />} />
+          <Route path="/uebermich" element={<UeberMich />} />
+          <Route path="/galerie" element={<Galerie />} />
+          <Route path="/kontakt" element={<Kontakt />} />
         </Routes>
         <Footer />
-      </div>
-    </Router>
-
+      </BrowserRouter>
     </div>
    
   }

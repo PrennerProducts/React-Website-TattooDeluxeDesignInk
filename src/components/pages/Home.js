@@ -4,7 +4,7 @@ import HeroSection from '../HeroSection';
 import Contact from './Contact';
 import Gallerie from './Gallerie';
 import UeberMich from './UeberMich';
-
+import './home.css'
 
 
 
@@ -15,15 +15,16 @@ function Home() {
     return (
         componentDidMount(),
        
-        <div className="home-container">
+            <div className='hero-container'><HeroSection  /> </div>
+           
+      
+=======
         <HeroSection />
-        <div className="home-grid">
-        <UeberMich className="uebermich" />
-        <Contact className="contact" />
-        <Gallerie className="gallerie" />
-      </div>
-    </div>
-  );
-}
+        
+>>>>>>> parent of e4783bd (before gpt)
+
+        </>
+    );
+    }
 
 export default Home;

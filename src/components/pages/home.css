@@ -1,2 +1,25 @@
 
 
+.home-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    justify-content: center;
+  }
+
+  .uebermich {
+    order: 1;
+  }
+  
+  .contact {
+    order: 2;
+  }
+  
+  .gallerie {
+    order: 3;
+  }

@@ -5,24 +5,25 @@ import Contact from './Contact';
 import Gallerie from './Gallerie';
 import UeberMich from './UeberMich';
 import './home.css'
-
+import { useMatch } from 'react-router-dom';
 
 
 function Home() {
     const componentDidMount = () =>  {
         window.scrollTo(0, 0);
+
+        const match = useMatch('/');
+
+        if (!match) {
+            return null;
+        }
     };
     return (
-        componentDidMount(),
-       
-          
-           
-        <>
-        <HeroSection />
-        
-
-        </>
-    );
+        <div className="home">
+          <HeroSection />
+          <UeberMich />
+        </div>
+      );
     }
 
 export default Home;

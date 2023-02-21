@@ -14,15 +14,8 @@ function Home() {
     return (
         componentDidMount(),
         <>
-<<<<<<< HEAD
-       
-            <div className='hero-container'><HeroSection  /> </div>
-           
-      
-=======
         <HeroSection />
         
->>>>>>> parent of e4783bd (before gpt)
 
         </>
     );

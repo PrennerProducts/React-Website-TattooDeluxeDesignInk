@@ -15,7 +15,7 @@ function HeroSection() {
 
 
   return (
-    <div className="hero-ueberContainer">
+    
     <div className="hero-container">
        
     
@@ -56,10 +56,8 @@ function HeroSection() {
       
       
     </div>
-      <UeberMich />
-      <Contact />
-      <Gallerie />
-    </div>
+   
+    
    
   );
 }

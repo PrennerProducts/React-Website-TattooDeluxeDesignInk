@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Jolly+Lodger&family=Rowdies&family=Rubik+Dirt&display=swap');
+
 .zeiten {
     transition: all 3s;
     transform: transLateX(0);
@@ -6,13 +8,15 @@
     background-image: url('../../public/images/div4.png');
     background-repeat: no-repeat;
     background-position: bottom bottom;
-    background-size: 120%;
+    background-size: 100%;
     z-index: -100;
     height:300px;
     width: 100%;
     display: inline-block;
     padding-bottom: 0px;
     margin-bottom: 0px;
+    font-family: 'Rowdies', cursive, Arial, sans-serif;
+   
     /* border: 2px solid rgba(255, 255, 255, 0.5); */
 }
 .zeitenHidden{
@@ -62,16 +66,16 @@
     justify-content: left;
     align-items: left;
     left: 12%;
-    font-size: 0.5rem;
     text-align: center;
     padding-left:  0%;
     margin-top: 120px;
-  
+    font-size: 1.4rem;
 
 }
 .left_zeiten p{
     text-align: left;
     padding-left:  15%;
+   
 }
 .zeitenheader{
     padding-bottom: 10px;
@@ -89,19 +93,20 @@
     text-align: center;
     padding-right: 0%;
     margin-top: 120px;
+    font-size: 1.4rem;
 }
 
 
 @media (max-width:480px){
     .zeiten {
-        background-image: none !important;
+        background-image: url('../../public/images/div4.png');
         background-position: center bottom;
-        background-size: 110%;
+        background-size: cover;
         z-index: -100;
         height:160px;
         width: 100%;
         display: flex;
-        padding-bottom: 70%;
+        
         /* border: 2px solid rgba(255, 255, 255, 0.5); */
       
     }
@@ -140,24 +145,25 @@
     
     .left_zeiten{
         /* border: 2px solid rgb(255, 255, 255); */
-        width: 50%;
-        height: 290px;
+        width: 80%;
+        height: 100px;
         position: absolute;
+        top: -80px;
         justify-content: left;
         align-items: left;
         left: 12%;
         font-size: 0.5rem;
         text-align: center;
-        padding-left:  0%;
-        margin-top: 120px;
-        padding-top: 8%;
+        font-size: 0.9rem;
+        /* border: 1px solid #fff; */
+        padding: 5px;
 
     }
     .left_zeiten p{
         text-align: left;
         padding-left:  0;
-        padding-bottom: 10px;
-        padding-top: 10px;
+       
+        
         font-weight: 1px;
         display: flex;
         align-items: center;

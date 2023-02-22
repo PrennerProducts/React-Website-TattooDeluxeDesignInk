@@ -196,8 +196,9 @@ font-family: 'Rowdies', cursive, Arial, sans-serif;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    position: fixed !important;
-    top: 0;
+    position:   fixed !important;
+    top: 15px;
+    margin-top: 15px;
     z-index: 9999;
   }
   .NavbarItems {
@@ -207,7 +208,7 @@ font-family: 'Rowdies', cursive, Arial, sans-serif;
   .nav-menu {
     display: flex;
     flex-direction: column;
-    left: -100%;
+    left: -200%;
     height: 100vh;
     position: absolute;
     top: 80px;
@@ -219,8 +220,10 @@ font-family: 'Rowdies', cursive, Arial, sans-serif;
   .nav-menu.active {
     background: #242222;
     position:absolute;
-    left: 0;
-    top: 0;
+    left: -10%;
+    align-items: center;
+    justify-content: center;
+    top: -20%;
     opacity: 1;
     transition: all 0.6s ease;
     z-index: -1;

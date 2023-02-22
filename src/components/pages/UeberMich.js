@@ -15,6 +15,7 @@ function UeberMich() {
 
     return (
         componentDidMount(),
+    <div className='ueber-uebermich-container'>
         <div className='uebermich-container'>
             <div className='left'>
                <div className='card bg'> </div>
@@ -51,6 +52,7 @@ function UeberMich() {
                 </div>
                  </div>
         </div>
+    </div>
     )
 }
 

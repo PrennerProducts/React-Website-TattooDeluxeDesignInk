@@ -28,8 +28,6 @@
     align-items: left;
     justify-content: left;
  
-    
-
 }
 
 .contactSection__wrapper_right{
@@ -129,7 +127,7 @@
         position: relative;
         bottom: 0px;
         margin-top: 25%;
-        padding-top: 80%;
+        padding-top: 100%;
         left: 10%;
         right: 10%;
         width: 80%;
@@ -137,12 +135,11 @@
     }
     
     
-    h1 {
+    .section-container h1 {
         color: rgb(255, 255, 255) ;
-        font-size: 4rem;
-        margin-top: 15%;
+        font-size: 5rem;
+        margin-top: 20%;
         font-family: 'Rowdies', cursive, Arial, sans-serif;
-        padding-bottom: 10px;
         
     }
     

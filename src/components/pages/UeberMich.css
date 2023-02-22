@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Jolly+Lodger&family=Rowdies&family=Rubik+Dirt&display=swap');
 
 
+.ueber-uebermich-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+
 .uebermich-container{
     background:  url('/public/images/background3.jpg' ) center center/cover no-repeat ;
     background-size: 'cover';
@@ -121,8 +129,8 @@
         background:  url('/public/images/background2.jpg' ) center center/cover no-repeat;;
         flex-direction: column;
         text-align: center;
-        padding-top: 100px;
-        height: 300vh;
+        padding-top: 10px;
+        height: 334vh;
     }
     .titel{
         display: none;
@@ -142,15 +150,17 @@
     .text-container{
         background-color: rgba(14, 12, 12, 0.719);
         position:relative;
-        top: 0px;
+        top: 0;
         border-radius: 30px; 
         padding: 0px;
         margin: 0px;
+       margin-left: 13%;
+       margin-top: 0px;
         align-items: center;
         justify-content: center;
     }
     .card{
-        margin-top:0px;
+        margin-top:15%;
         border: 1px solid rgb(123, 118, 118);
         height: 30vh;
         justify-content: center;
@@ -165,6 +175,7 @@
     .award{
         position: relative;
         top: 0px;
+        left: 30px;
     }
     .award-text{
         width: 90%;

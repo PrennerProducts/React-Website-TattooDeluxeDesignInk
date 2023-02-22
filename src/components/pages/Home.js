@@ -1,9 +1,11 @@
 import React from 'react'
 import '../../App.css';
 import HeroSection from '../HeroSection';
-import Gallerie from './Gallerie';
+
 import UeberMich from './UeberMich';
 import './home.css'
+import Contact from './Contact';
+import Gallerie from './Gallerie';
 
 
 
@@ -13,14 +15,20 @@ function Home() {
     };
     return (
         componentDidMount(),
-        <>
-
-            <div className='hero-container'><HeroSection  /> </div>
-            // place <UeberMich /> component  here to display it on the home page under the <HeroSection/>
-           
-      
-
-        </>
+        <div className="home-container">
+            <div className="hero-container">
+            <HeroSection />
+            </div>
+            <div className="about-container">
+            <UeberMich />
+            </div>
+            <div className="contact-container">
+            <Contact />
+            </div>
+            <div className="gallerie-container">
+            <Gallerie />
+            </div>
+         </div>
     );
     }
 

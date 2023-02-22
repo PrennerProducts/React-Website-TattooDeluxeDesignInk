@@ -15,6 +15,7 @@
     align-items: left;
     justify-content: left;
     /* border: 2px solid rgb(18, 192, 26); */
+    z-index: 99;
 }
 .contactFormContainerHidden{
     opacity: 0;

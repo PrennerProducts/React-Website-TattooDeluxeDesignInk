@@ -1,8 +1,12 @@
 .App{
-  text-align: center;
-  display: fill;
+  text-align: center;;
   align-items: center;
   justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  /* overflow:hidden; */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  
 }
 
 .spinner{
@@ -10,9 +14,24 @@
   align-items: center;
   display: flex;
  background-color: black;
- width: 105%;
- height: 105vh;
+ width: 100vw;
+ height: 100vh;
  margin-top: -10px;
   margin-left: -10px;
 }
 
+.app-route{
+  width: 100vw;
+  position: absolute;
+  left: 0;
+
+}
+
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

@@ -4,6 +4,7 @@
    display: flex;
    flex-direction: column;
    align-items: center; 
+   width: 100%;
 }
 
 
@@ -13,8 +14,10 @@ video {
     height: 100vh;
     position: fixed;
     top: 0;
+    left: 0;
     z-index: -11;
     opacity: 1;
+    overflow: hidden;
 }
 
 .hero-container {
@@ -29,6 +32,7 @@ video {
     justify-content: top;
     position: absolute; 
     top: 0;
+    left: 0;
 }
 
 .hero-container > h1    {

@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
   }
 
 
@@ -13,7 +14,6 @@
     background:  url('/public/images/background3.jpg' ) center center/cover no-repeat ;
     background-size: 'cover';
     background-position: center center;
-
     height: 140vh;
     display: flex;
     align-items: center;
@@ -131,6 +131,7 @@
         text-align: center;
         padding-top: 10px;
         height: 334vh;
+        width: 100%;
     }
     .titel{
         display: none;

@@ -3,9 +3,14 @@ import MyNavbar from '../Navbar'
 import './impressum.css'
 
 export default function Impressum() {
+
+  const componentDidMount = () =>  {
+    window.scrollTo(0, 0);
+};
   return (
+    componentDidMount(),
     <div className="impressum-container">
-        <MyNavbar/>
+        <MyNavbar />
       <h1>Impressum</h1>
         
         <ul>

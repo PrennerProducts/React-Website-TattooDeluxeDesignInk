@@ -91,9 +91,10 @@ video {
         flex-direction: column;
         align-items: center;
         object-fit: contain;
-        justify-content: top;
+        justify-content: center;
         position: absolute; 
         top: 0;
+        overflow-x: hidden;
     }
     .hero-container > h1 {
         width: 100vw;
@@ -104,6 +105,8 @@ video {
     }
     .herologo{
         display: center;
+        position: relative;
+        top: 0;
         width: 100%;
 
     }

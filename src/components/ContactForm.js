@@ -40,10 +40,10 @@ const ContactForm = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      'service_woq2he8', 
-      'template_k6kc3xs', 
+      'service_fj2ixfa', 
+      'template_xsc867a', 
       form.current, 
-      'etQGduZrbhhtzgCMx')
+      'hGaV0DP7garOSv7PX')
       .then((result) => {
         notify();
         clearInput();

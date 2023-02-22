@@ -50,8 +50,8 @@
     bottom: 0;
     margin-top: 5%;
     padding-top: 30%;
-    left: 10%;
-    right: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
     width: 80%;
 }
 
@@ -76,7 +76,7 @@
   }
 
 
-  @media (max-width:480px){
+  @media screen and (max-width:480px){
     .section-container{
         position: absolute;
         display: row;
@@ -125,11 +125,14 @@
     
     .map{
         position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         bottom: 0px;
         margin-top: 25%;
         padding-top: 100%;
-        left: 10%;
-        right: 10%;
+        padding-right: 10%;
+        padding-left: 10%;
         width: 80%;
         height: auto;
     }

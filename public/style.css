@@ -1,15 +1,12 @@
-.index-container{
-    width: auto;
-    height: 100vh;
-}
-
 /* Hide scrollbar for Chrome, Safari and Opera */
-.example::-webkit-scrollbar {
+body::-webkit-scrollbar {
     display: none;
   }
   
   /* Hide scrollbar for IE, Edge and Firefox */
-  .example {
+  body {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
   }
+
+

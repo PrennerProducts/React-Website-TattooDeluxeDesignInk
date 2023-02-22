@@ -7,7 +7,7 @@
     flex-direction: column;
     height: 300vh;
     width: 100vw;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
+
     
   }
   
@@ -15,6 +15,7 @@
     display: flex;
     flex: 1;
     z-index: 2;
+    
   }
   
   .about-container {
@@ -24,12 +25,13 @@
     top: 100vh;
     height: 100vh;
     padding-top: 100vh;
-    width: 100%;
+    width: 100vw;
     left: 0;
     right: 0;
-    z-index: 11;
+    z-index: 111;
     align-items: center;
     justify-content: center;
+    
   
   }
 
@@ -38,13 +40,15 @@
     position: relative;
     flex: 1;
     top: 100vh;
-    padding-top: 200vh;
+    padding-top: 100vh;
+    margin-top: 100vh;
     height: 100vh;
     width: 100vw;
     left: -10px;
-    z-index: 11;
+    z-index: 111;
     align-items: center;
     justify-content: center;
+  
   }
 
   .gallerie-container{
@@ -59,8 +63,7 @@
     z-index: 11;
     align-items: center;
     justify-content: center;
-  
-   
+
   }
 
   @media screen and (max-width:480px) {
@@ -71,6 +74,9 @@
     top: 0;
     flex-direction: column;
     height: 1000vh;
+    width: 97vw;
+   
+  
     
   }
   
@@ -78,6 +84,7 @@
     display: flex;
     flex: 1;
     z-index: 2;
+    
   }
   
   .about-container {
@@ -92,6 +99,7 @@
     z-index: 11;
     align-items: center;
     justify-content: center;
+  
   }
 
   .contact-container{
@@ -106,6 +114,7 @@
     z-index: 11;
     align-items: center;
     justify-content: center;
+     
   }
 
   .gallerie-container{
@@ -120,6 +129,7 @@
     z-index: 11;
     align-items: center;
     justify-content: center;
+ 
   
    
   }

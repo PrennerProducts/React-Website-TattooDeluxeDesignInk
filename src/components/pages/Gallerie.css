@@ -110,7 +110,10 @@
         column-width: 100%;
     }
 
-
+    .gallery .pics:hover{
+        filter: opacity(1);
+    }
+    
   
 
     .h1div h1{

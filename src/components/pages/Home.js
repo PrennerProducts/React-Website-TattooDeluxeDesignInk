@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../../App.css';
 import HeroSection from '../HeroSection';
 
@@ -13,8 +13,11 @@ function Home() {
     const componentDidMount = () =>  {
         window.scrollTo(0, 0);
     };
+
+    
     return (
         componentDidMount(),
+      
         <div className="home-container">
             <div className="hero-container">
             <HeroSection />

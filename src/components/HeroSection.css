@@ -10,7 +10,7 @@
 
 video {
     object-fit: fill;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -24,7 +24,7 @@ video {
     /* background:url('/public/images/background2.jpg') 
     center center/cover no-repeat;  */
     height:100vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,7 +71,8 @@ video {
     height: auto;
     position: absolute;
     bottom:  4%;
-    right: 0px;
+    right: 20px;
+  
 }
 
 .hero-footer {
@@ -86,7 +87,7 @@ video {
         /* background:url('/public/images/background2.jpg') 
         center center/cover no-repeat;  */
         height:100vh;
-        width: 100vw;
+        width: 97vw;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -104,10 +105,11 @@ video {
     
     }
     .herologo{
+        width: 90%;
         display: center;
         position: relative;
         top: 0;
-        width: 100%;
+        
 
     }
     .typeAnimation{

@@ -37,7 +37,7 @@ export default function App() {
              />
        </div>
       :
-        <div>
+        <div className='app-route'>
     
        
       {/* Routes nest inside one another. Nested route paths build upon

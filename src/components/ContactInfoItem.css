@@ -20,6 +20,7 @@
     /* border: 1px solid rgb(189, 17, 17); */
     margin-bottom: 2rem;
     font-family: 'Rowdies', cursive, Arial, sans-serif;
+    z-index: 99999;
 
 }
 .ItemStylesHidden{

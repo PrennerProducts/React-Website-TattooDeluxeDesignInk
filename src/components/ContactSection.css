@@ -27,6 +27,7 @@
     /* border: 3px solid rgb(4, 89, 95); */
     align-items: left;
     justify-content: left;
+    z-index: 1;
  
 }
 
@@ -101,7 +102,7 @@
         display: row;
         padding-left:5%;        width: 50%;
         height: contain;
-        /* border: 3px solid rgb(4, 89, 95); */
+        /* border: 8px solid rgb(11, 177, 189); */
         align-items: left;
         justify-content: left;
      

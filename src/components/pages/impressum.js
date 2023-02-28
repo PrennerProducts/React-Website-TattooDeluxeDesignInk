@@ -15,11 +15,15 @@ export default function Impressum() {
         
         <ul>
             <li>
-            Betreiber dieser Webseite: <br/>
+            Betreiber dieser Webseite: <br/><br/>
             Name des Unternehmens: PP-Ink TattooStudio (Philipp Paulitsch) <br/>
             Inhaber: Philipp Paulitsch <br/>
             Anschrift: Griffnerstraße 14  9100 Völkermarkt <br/>
             Telefonnummer: 06644274644 <br/>
+            Webseite:<a href="https://www.pp-ink-tattoo.studio"> www.pp-ink-tattoo.studio</a>  <br/>
+            Kammer: WKO<br/>  
+            
+          
           
             </li>
             <br/>
@@ -48,17 +52,14 @@ Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Date
 </li> <br/>
 <li>
 Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich."
-<br/>Name des Unternehmens: PP-Ink TattooStudio (Philipp Paulitsch)
-Inhaber: Philipp Paulitsch <br/>
-Anschrift: Griffnerstraße 14  9100 Völkermarkt <br/>
-Telefonnummer: 06644274644 <br/>
+
 </li> 
 <br/>
 <li>
 Rechtliche Hinweise: <br/>
 
 Verantwortlich für den Inhalt: Philipp Paulitsch <br/>
-Quellenangaben für verwendetes Bild- und Videomaterial: [Angabe der Quellen oder, falls eigene Bilder verwendet werden, eine entsprechende Kennzeichnung] <br/>
+Quellenangaben für verwendetes Bild- und Videomaterial: https://unsplash.com/, https://pixabay.com/, sowie eingene Bilder<br/>
 Haftungsausschluss: Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
 </li>
 <br/>

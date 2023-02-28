@@ -87,15 +87,16 @@ video {
         /* background:url('/public/images/background2.jpg') 
         center center/cover no-repeat;  */
         height:100vh;
-        width: 97vw;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        object-fit: contain;
+        object-fit: cover;
         justify-content: center;
         position: absolute; 
         top: 0;
-        overflow-x: hidden;
+        right: 0;
+        
     }
     .hero-container > h1 {
         width: 100vw;
@@ -116,11 +117,10 @@ video {
         display: none;
     }
     .video {
-        object-fit: scale-down;
-      
+        object-fit: fill;
         height: 100vh;
         width: 100vw;
-        position: relative;
+        position: absolute;
         z-index: -1;
     }
     .zeitenheader{

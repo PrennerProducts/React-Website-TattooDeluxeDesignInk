@@ -13,7 +13,7 @@ export default function Contact() {
 
   return (
     componentDidMount(),
-    <div className="container">
+    <div className="ccontainer">
       <ContactSection />
     </div>
   )

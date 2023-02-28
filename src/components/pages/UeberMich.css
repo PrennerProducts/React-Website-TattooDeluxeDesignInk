@@ -18,9 +18,10 @@
     display: flex;
     align-items: center;
     color:rgb(255, 255, 255);
-    padding-top: 3%;
+    padding-top: 0%;
     position: absolute;
     top: 0;
+    /* border: 3px solid red; */
 }
 
 
@@ -125,6 +126,16 @@
 
 
 @media screen and (max-width:480px) {
+    
+.ueber-uebermich-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 100%;
+  }
     .uebermich-container{
         background:  url('/public/images/background2.jpg' ) center center/cover no-repeat;;
         flex-direction: column;
@@ -132,6 +143,12 @@
         padding-top: 10px;
         height: 334vh;
         width: 100%;
+        position: absolute;
+        top:0;
+        right: 0;
+        align-items: center;
+        justify-content: center;
+        /* border: 3px solid red; */
     }
     .titel{
         display: none;
@@ -139,17 +156,23 @@
     .left{
         width: 100%;
         margin-bottom: 0px;
-        flex:1;
+        flex: 0.2;
+        padding-bottom: 0;
     }
 
     .right{
         flex: 1;
         position: relative;
         top: 0px;
-        width: 97vw;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
         margin-right: 0px;
         margin-left: 0px;
         padding-left: 0px;
+        margin:0px;
+        padding: 0px;
         
     }
     .text-container{
@@ -159,13 +182,13 @@
         border-radius: 30px; 
         padding: 0px;
         margin: 0px;
-        padding-left: 15%;
+        width: 100%;
         align-items: center;
         justify-content: center;
     }
     .card{
         margin-top:15%;
-        border: 1px solid rgb(123, 118, 118);
+        border: 1px solid rgba(0, 0, 0, 0.781);
         height: 30vh;
         justify-content: center;
         align-items: center;
@@ -179,7 +202,9 @@
     .award{
         position: relative;
         top: 0px;
-        left: 30px;
+        left: 10px;
+        width: 80%;
+       
     }
     .award-text{
         width: 90%;

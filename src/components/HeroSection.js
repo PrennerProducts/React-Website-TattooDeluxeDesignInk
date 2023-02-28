@@ -51,7 +51,7 @@ function HeroSection() {
     />
        </div>
        <img className='herologo' src="/images/white_logo_transparent_background.png" alt="logocube"  />    
-       <video  src="/videos/Tattoo-s-zoom.mp4" autoPlay loop muted  />
+       <video  src="/videos/Tattoo_zoom.mp4" autoPlay loop muted  />
       
       
       

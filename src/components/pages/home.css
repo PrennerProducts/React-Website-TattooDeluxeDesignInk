@@ -76,7 +76,6 @@
     flex-direction: column;
     height: 1000vh;
     width: 100%;
-    border: 3px solid red;
   }
   
   .hero-container {
@@ -129,8 +128,5 @@
     z-index: 11;
     align-items: center;
     justify-content: center;
- 
-  
-   
   }
   }
